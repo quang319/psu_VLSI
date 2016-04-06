@@ -1,0 +1,794 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Feb 10 14:13:55 2016
+# Process ID: 24666
+# Log file: /home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/tutorial/tutorial.runs/synth_1/fpga.vds
+# Journal file: /home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/tutorial/tutorial.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fpga.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx690tffg1157-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/tutorial/tutorial.cache/wt [current_project]
+# set_property parent.project_path /home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/tutorial/tutorial.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib {
+#   /home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/mmcm/mmcm_i125_o100_o200_o400_o600/mmcm_i125_o100_o200_o400_o600_clk_wiz.v
+#   /home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/verilog/fpga.v
+# }
+# read_xdc /home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc
+# set_property used_in_implementation false [get_files /home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc]
+# catch { write_hwdef -file fpga.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top fpga -part xc7vx690tffg1157-2
+Command: synth_design -top fpga -part xc7vx690tffg1157-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2015.11' and will expire in -72 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 961.543 ; gain = 142.734 ; free physical = 2653 ; free virtual = 7905
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fpga' [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/verilog/fpga.v:10]
+INFO: [Synth 8-638] synthesizing module 'mmcm_i125_o100_o200_o400_o600_clk_wiz' [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/mmcm/mmcm_i125_o100_o200_o400_o600/mmcm_i125_o100_o200_o400_o600_clk_wiz.v:70]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10265]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (1#1) [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10265]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:15990]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter CLKOUT1_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter CLKFBOUT_MULT_F bound to: 48.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 12.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:15990]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'mmcm_i125_o100_o200_o400_o600_clk_wiz' (4#1) [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/mmcm/mmcm_i125_o100_o200_o400_o600/mmcm_i125_o100_o200_o400_o600_clk_wiz.v:70]
+INFO: [Synth 8-256] done synthesizing module 'fpga' (5#1) [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/verilog/fpga.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 996.840 ; gain = 178.031 ; free physical = 2615 ; free virtual = 7868
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 996.840 ; gain = 178.031 ; free physical = 2615 ; free virtual = 7868
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockRegion.xml
+Loading clock buffers from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockBuffers.xml
+Loading clock placement rules from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ffg1157/Package.xml
+Loading io standards from /home/software/vivado-2014.4/Vivado/2014.4/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */refclk_ibuf/O}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:13]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_pins * -hier -filter {NAME  =~ */refclk_ibuf/O}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */txoutclk_i.txoutclk_i/O}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:14]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_pins * -hier -filter {NAME  =~ */txoutclk_i.txoutclk_i/O}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:14]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/I0}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:17]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/O}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:17]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_generated_clock constraint with option '-source [get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/I0}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:17]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/I1}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:19]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/O}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:19]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_generated_clock constraint with option '-source [get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/I1}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:19]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Timing 38-2] Deriving generated clocks [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:21]
+WARNING: [Vivado 12-646] clock 'clk_125mhz_mux' not found. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:21]
+WARNING: [Vivado 12-646] clock 'clk_250mhz_mux' not found. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:21]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_clock_groups constraint with option '-group clk_125mhz_mux'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:21]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/S*}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:22]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-to [get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/S*}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:22]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg1_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:23]
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg2_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:23]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_max_delay constraint with option '-from [get_cells -hier *rst_sync_reg1_reg]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rst_n'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:26]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-from [get_ports pcie_rst_n]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:26]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'LBL_SLOT0_IS_HOST_INTERFACE.i_slot0_host_interface/aresetn_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:27]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-through [get_cells LBL_SLOT0_IS_HOST_INTERFACE.i_slot0_host_interface/aresetn_reg]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:27]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg2_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:30]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-through [get_cells -hier *rst_sync_reg2_reg]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:30]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'vortex_rst_r_reg[31]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:31]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-through [get_cells -hier {vortex_rst_r_reg[31]}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:31]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rst_n'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rst_n'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rst_n'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_clk_n'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_txn[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_txn[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_txn[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_txn[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prot0_out'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prot2_in[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prot2_in[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prot2_out'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prot0_out'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prot2_in[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prot2_in[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prot2_out'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mem_clk_p'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:156]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports mem_clk_p]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:156]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'mem_ref_clk_p'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:159]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for create_clock constraint with option '-objects [get_ports mem_ref_clk_p]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:159]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'mem_clk_p'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-613] Cannot find cell 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller' in current context, where current instance = '' and current design = 'elab_constrs_1' [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:169]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:180]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:180]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:220]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:229]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:229]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:230]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:231]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:231]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:234]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:234]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:235]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:235]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:236]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:236]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:239]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:240]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:241]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:244]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:244]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:245]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:245]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:246]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:246]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:249]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:249]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:254]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:254]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:255]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:255]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:256]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:259]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:260]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:260]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:261]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:265]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:265]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:266]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:266]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:269]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:269]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:270]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:275]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:275]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:276]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:276]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:279]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:279]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:281]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:281]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:284]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:284]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:285]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:285]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:286]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:286]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:290]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:290]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:291]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:291]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:294]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:294]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:295]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:296]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:299]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:300]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:301]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:304]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:305]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[20]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:306]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:309]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:310]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[21]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:311]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:314]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:315]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[22]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:316]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:319]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:320]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[23]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:321]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:324]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:325]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[24]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:326]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:329]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:330]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[25]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:331]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:334]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:335]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[26]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:336]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:336]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:919]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */input_[?].iserdes_dq_.iserdesdq}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:919]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_multicycle_path constraint with option '-from [get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:919]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:921]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */input_[?].iserdes_dq_.iserdesdq}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:921]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_multicycle_path constraint with option '-from [get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:921]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:927]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */DQSFOUND} -of [get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:927]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-through [get_pins -filter {NAME =~ */DQSFOUND} -of [get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}]]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:927]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:929]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:929]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_multicycle_path constraint with option '-through [get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:929]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:930]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:930]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_multicycle_path constraint with option '-through [get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:930]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg1_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:940]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-from [get_cells -hier *rst_sync_reg1_reg]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:940]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg1_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:941]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-to [get_cells -hier *rst_sync_reg1_reg]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:941]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg2_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:942]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_false_path constraint with option '-to [get_cells -hier *rst_sync_reg2_reg]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:942]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg/C'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:944]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_max_delay constraint with option '-from [get_pins LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg/C]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:944]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Designutils 20-1307] Command '-to' is not supported in the xdc constraint file. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:945]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg/C'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:947]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.i_nifmem_dram_adaptor/i_reset_sync/rst_sync_reg2_reg/PRE'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:947]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_max_delay constraint with option '-from [get_pins LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg/C]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:947]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:949]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.i_init_calib_complete_sync/rst_sync_reg1_reg/PRE'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:949]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_max_delay constraint with option '-from [get_pins LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:949]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:951]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.i_init_calib_complete_sync/rst_sync_reg2_reg/PRE'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:951]
+CRITICAL WARNING: [Vivado 12-1387] No valid object(s) found for set_max_delay constraint with option '-from [get_pins LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C]'. [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc:951]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/grads/qxn5005/Documents/psu_VLSI/hw/hw3/hw3_vivado_tutorial/code/FPGA/hdl/ucf/fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1467.371 ; gain = 0.000 ; free physical = 2187 ; free virtual = 7440
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2186 ; free virtual = 7439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2186 ; free virtual = 7439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2186 ; free virtual = 7439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2183 ; free virtual = 7435
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 7     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fpga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 7     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+Module mmcm_i125_o100_o200_o400_o600_clk_wiz 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2183 ; free virtual = 7435
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2183 ; free virtual = 7435
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2183 ; free virtual = 7435
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2183 ; free virtual = 7435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2183 ; free virtual = 7435
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2183 ; free virtual = 7435
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2183 ; free virtual = 7435
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2181 ; free virtual = 7434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2181 ; free virtual = 7434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2181 ; free virtual = 7434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2181 ; free virtual = 7434
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2181 ; free virtual = 7434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2181 ; free virtual = 7434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     5|
+|2     |CARRY4     |    32|
+|3     |LUT1       |   126|
+|4     |LUT2       |     7|
+|5     |LUT3       |     3|
+|6     |LUT4       |     3|
+|7     |MMCME2_ADV |     1|
+|8     |FDPE       |    32|
+|9     |FDRE       |   128|
+|10    |IBUF       |     4|
+|11    |IBUFDS     |     1|
+|12    |OBUF       |     8|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------+--------------------------------------+------+
+|      |Instance        |Module                                |Cells |
++------+----------------+--------------------------------------+------+
+|1     |top             |                                      |   350|
+|2     |  i_clock_synth |mmcm_i125_o100_o200_o400_o600_clk_wiz |     8|
++------+----------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2181 ; free virtual = 7434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1467.371 ; gain = 86.230 ; free physical = 2181 ; free virtual = 7434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.371 ; gain = 648.562 ; free physical = 2181 ; free virtual = 7434
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 162 Warnings, 127 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1467.371 ; gain = 557.797 ; free physical = 2180 ; free virtual = 7433
+# write_checkpoint -noxdef fpga.dcp
+# catch { report_utilization -file fpga_utilization_synth.rpt -pb fpga_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1467.371 ; gain = 0.000 ; free physical = 2179 ; free virtual = 7432
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 10 14:14:34 2016...

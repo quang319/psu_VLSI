@@ -1,0 +1,5 @@
+source ../inputs/clock_uncertainity.tcl
+psynopt
+route_opt
+
+save_mw_cel -as route

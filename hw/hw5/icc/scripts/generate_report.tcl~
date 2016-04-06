@@ -1,0 +1,4 @@
+report_timing > timing.rpt
+report_area  > area.rpt 
+report_power > power_nosaif.rpt
+report_cell > cell.rpt

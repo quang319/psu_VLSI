@@ -1,0 +1,3 @@
+LIBRARY    core
+  REFERENCE    /home/software/synopsys-2013/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m/
+  REFERENCE    /home/software/synopsys-2013/SAED32_EDK/lib/sram/milkyway/SRAM32NM

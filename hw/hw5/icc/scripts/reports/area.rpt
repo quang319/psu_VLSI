@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : TRAFFIC_lights
+Version: H-2013.03-ICC-SP2
+Date   : Sat Mar 12 12:19:26 2016
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ff0p85v25c (File: /home/software/synopsys-2013/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ff0p85v25c.db)
+
+Number of ports:                           11
+Number of nets:                            93
+Number of cells:                           81
+Number of combinational cells:             62
+Number of sequential cells:                19
+Number of macros/black boxes:               0
+Number of buf/inv:                         13
+Number of references:                      20
+
+Combinational area:                121.734977
+Buf/Inv area:                       16.519360
+Noncombinational area:             113.856514
+Macro/Black Box area:                0.000000
+Net Interconnect area:              34.583037
+
+Total cell area:                   235.591492
+Total area:                        270.174529
+1

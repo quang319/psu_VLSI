@@ -1,0 +1,55 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Wed Feb 10 14:15:21 2016
+| Host         : p218inst17.cse.psu.edu running 64-bit Red Hat Enterprise Linux Workstation release 6.7 (Santiago)
+| Command      : report_control_sets -verbose -file fpga_control_sets_placed.rpt
+| Design       : fpga
+| Device       : xc7vx690t
+-------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     2 |
+| Minimum Number of register sites lost to control set restrictions |     0 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             128 |           32 |
+| No           | No                    | Yes                    |              32 |            8 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------+---------------------+------------------+----------------+
+|       Clock Signal      | Enable Signal |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++-------------------------+---------------+---------------------+------------------+----------------+
+|  i_clock_synth/clk_out1 |               | i_clock_synth/reset |                8 |             32 |
+|  i_clock_synth/clk_out1 |               |                     |               32 |            128 |
++-------------------------+---------------+---------------------+------------------+----------------+
+
+

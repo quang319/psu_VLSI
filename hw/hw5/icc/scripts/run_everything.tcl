@@ -1,0 +1,5 @@
+gui_start
+source library_setup.tcl
+source read_design.tcl
+source floorplan.tcl
+source place_route.tcl

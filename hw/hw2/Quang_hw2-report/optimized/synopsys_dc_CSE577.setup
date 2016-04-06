@@ -1,0 +1,24 @@
+# rename as .synopsys_dc.setup
+
+# Search Path variables
+#set path1 "/home/mdl/nic5090/Synopsys/Lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM"  //Alternate library format
+set path1 "/home/software/synopsys-2013/SAED32_EDK/lib/stdcell_rvt/db_ccs"
+set path2 "/home/software/synopsys-2013/SAED32_EDK/lib/sram/db_ccs" 
+######## Set path for the I/O libraries. #########
+
+ 
+set search_path "$path1 $path2 $search_path"
+
+set search_path [concat  $search_path [list [format "%s%s"  $synopsys_root "/libraries/syn"]]]
+set search_path [concat  $search_path [list "." [format "%s%s"  $synopsys_root "/dw/sim_ver"]]]
+
+# Library Variables
+set synthetic_library [list dw_foundation.sldb]
+
+set target_library saed32rvt_ff0p85v25c.db
+set target_library1 saed32sram_tt1p05v25c.db
+set target_library "saed32rvt_ff0p85v25c.db saed32sram_tt1p05v25c.db"
+set link_library   [concat  $target_library $target_library1 $synthetic_library]
+
+set verilogout_no_tri "true"
+

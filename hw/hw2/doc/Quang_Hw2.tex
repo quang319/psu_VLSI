@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+
+\usepackage{caption}
+
+\title{CSE 577 - Homework\# 2 Report}
+\author{Quang Nguyen}
+\date{2/4/2016}
+
+\begin{document}
+
+\maketitle
+
+The goal of the improved design is to optimize on the power consumption of the design. The was done by decreasing the amount of states in the design's state machine. Be reducing the number of sequential circuits needed, it was predicted that the overall power consumption would decrease. \\
+
+As expected, reducing the number of states did indeed decrease the total power consumption. Not surprisingly, this optimization also decrease the total area and timing of the design. The decreased in power was due to the fact that the few combination gates, that replaced the flip flops needed for the additional states, consumed less power. This makes sense since the flip flops are just multiple combination gates combined together. By the same reasoning, this improvement also decreased the total area and timing of the of design.\\
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+	\hline		& Original 		& Optimized 	\\ \hline
+	Total Area  & 263.188920 	& 255.662470 	\\ \hline
+	Slack (MET) & 0.17          & 0.10			\\ \hline 
+	Total Power ($\mu W$) 
+				& 14.6083 		& 13.9345		\\ \hline
+\end{tabular}
+\captionof{table}{Result of optimized design}
+\end{center}
+
+
+
+\end{document}

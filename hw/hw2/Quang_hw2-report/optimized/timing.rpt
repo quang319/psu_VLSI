@@ -1,0 +1,55 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TRAFFIC_lights
+Version: H-2013.03-SP5-2
+Date   : Wed Feb  3 16:25:16 2016
+****************************************
+
+Operating Conditions: ff0p85v25c   Library: saed32rvt_ff0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cnt_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TRAFFIC_lights     8000                  saed32rvt_ff0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[2]/CLK (DFFSSRX1_RVT)          0.00       0.00 r
+  state_reg[2]/Q (DFFSSRX1_RVT)            0.09       0.09 f
+  U147/Y (NAND3X0_RVT)                     0.03       0.12 r
+  U127/Y (INVX1_RVT)                       0.02       0.15 f
+  U142/Y (OR2X1_RVT)                       0.03       0.18 f
+  U130/Y (AND3X1_RVT)                      0.04       0.21 f
+  U131/Y (OA221X1_RVT)                     0.06       0.28 f
+  U161/Y (NAND2X0_RVT)                     0.03       0.30 r
+  U162/Y (NAND2X0_RVT)                     0.02       0.33 f
+  U164/Y (AO222X1_RVT)                     0.04       0.37 f
+  cnt_reg[2]/D (DFFX1_RVT)                 0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock clk (rise edge)                    0.50       0.50
+  clock network delay (ideal)              0.00       0.50
+  cnt_reg[2]/CLK (DFFX1_RVT)               0.00       0.50 r
+  library setup time                      -0.03       0.47
+  data required time                                  0.47
+  -----------------------------------------------------------
+  data required time                                  0.47
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.10
+
+
+1
