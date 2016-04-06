@@ -1,17 +1,4 @@
-# ignore anything that is not PNG
-!*.png
-!*.docx
-!*.pdf
-!*.cshrc
-!*.v
-!*.rpt
-!*.tcl
-!*.setup
-!*.ddc
-!*.sdc
-!*.alib
-!*.sv
-!*.xlsx
+
 *.gyd
 *.jed
 *.*log
