@@ -4,3 +4,9 @@ P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\bin\Debug\CGenLUT.
 P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.csprojResolveAssemblyReference.cache
 P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.exe
 P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.pdb
+C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\bin\Debug\CGenLUT.exe.config
+C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.pdb
+C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\bin\Debug\CGenLUT.exe
+C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\bin\Debug\CGenLUT.pdb
+C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.csprojResolveAssemblyReference.cache
+C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.exe

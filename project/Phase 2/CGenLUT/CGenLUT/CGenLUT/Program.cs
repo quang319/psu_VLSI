@@ -44,7 +44,7 @@ namespace CGenLUT
             {
                 foreach(short item in listCr)
                 {
-                    writer.WriteLine(Convert.ToString(item,2));
+                    writer.WriteLine(Convert.ToString(item,2).PadLeft(16,'0'));
                 }
             }
         }
