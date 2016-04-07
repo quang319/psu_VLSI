@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modeltech64_10.4d/examples
+T_opt
+!s110 1460058553
+VJPfS`b`eW:f4jJM3L>EN50
+Z1 04 9 4 work testbench fast 0
+04 7 4 work transCr fast 0
+=1-74e6e2e56a9d-5706b9b8-33-1a4
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OL;O;10.4d;61
+R0
+T_opt1
+!s110 1460059475
+Vg65e^m:5OE0mO4AAPVC>Q3
+R1
+=1-74e6e2e56a9d-5706bd52-9c-230c
+R2
+n@_opt1
+R3
+R0
+vtestbench
+!s110 1460059662
+!i10b 1
+!s100 X=;dn@2^F3lTI_3CC9AP`1
+IkgbTYJzR0MX]_2^KlJz1P2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 dP:/Documents/psu_VLSI/project/Phase 2/Verilog
+w1460059453
+8P:/Documents/psu_VLSI/project/Phase 2/Verilog/testbench.v
+FP:/Documents/psu_VLSI/project/Phase 2/Verilog/testbench.v
+L0 2
+Z6 OL;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1460059661.000000
+!s107 P:/Documents/psu_VLSI/project/Phase 2/Verilog/testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|P:/Documents/psu_VLSI/project/Phase 2/Verilog/testbench.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtransCr
+!s110 1460058803
+!i10b 1
+!s100 i8AcXEJ;JN^mi31?<ITZ>2
+IPjGGoA0Ab0YW1<NMzEL2X0
+R4
+R5
+w1460058787
+8P:/Documents/psu_VLSI/project/Phase 2/Verilog/transCr.v
+FP:/Documents/psu_VLSI/project/Phase 2/Verilog/transCr.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1460058803.000000
+!s107 P:/Documents/psu_VLSI/project/Phase 2/Verilog/transCr.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|P:/Documents/psu_VLSI/project/Phase 2/Verilog/transCr.v|
+!i113 0
+R7
+ntrans@cr

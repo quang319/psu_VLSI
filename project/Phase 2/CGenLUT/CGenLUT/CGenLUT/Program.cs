@@ -30,21 +30,29 @@ namespace CGenLUT
         {
             List<short> listCr = new List<short>();
             List<short> listCb = new List<short>();
+            List<double> listCr_exp = new List<double>();
+            List<double> listCb_exp = new List<double>();
             short resultCr;
             short resultCb;
             for (int i = 0; i < 256; i++)
             {
-                resultCr = doubleToShort(MeanCr(i));
-                resultCb = doubleToShort(MeanCb(i));
+                double CrTemp = MeanCr(i);
+                double CbTemp = MeanCb(i);
+                resultCr = doubleToShort(CrTemp);
+                resultCb = doubleToShort(CbTemp);
+                listCr_exp.Add(CrTemp);
+                listCb_exp.Add(CbTemp);
                 listCr.Add(resultCr);
                 listCb.Add(resultCb);
             }
 
+            System.IO.File.WriteAllText("MeanCr_LUT.list", string.Empty);
             using (StreamWriter writer = new StreamWriter("MeanCr_LUT.list"))
             {
                 foreach(short item in listCr)
                 {
-                    writer.WriteLine(Convert.ToString(item,2).PadLeft(16,'0'));
+                    //writer.WriteLine(Convert.ToString(item,2).PadLeft(16,'0'));
+                    writer.WriteLine(item.ToString("X").PadLeft(4, '0'));
                 }
             }
         }
@@ -75,7 +83,7 @@ namespace CGenLUT
 
         static short doubleToShort(double input)
         {
-            return Convert.ToInt16(input * 256);
+            return Convert.ToInt16(input * 256.0);
         }
 
     }
