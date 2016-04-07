@@ -1,0 +1,6 @@
+P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\bin\Debug\CGenLUT.exe.config
+P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\bin\Debug\CGenLUT.exe
+P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\bin\Debug\CGenLUT.pdb
+P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.csprojResolveAssemblyReference.cache
+P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.exe
+P:\Documents\psu_VLSI\project\Phase 2\CGenLUT\CGenLUT\CGenLUT\obj\Debug\CGenLUT.pdb
