@@ -1,0 +1,422 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Apr  8 16:21:21 2016
+# Process ID: 17489
+# Log file: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/mult_gen_0.vds
+# Journal file: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source mult_gen_0.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx690tffg1157-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.cache/wt} [current_project]
+# set_property parent.project_path {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.xpr} [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_ip {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/vivado-2014.4/Vivado/2014.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found '/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found '/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found '/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found '/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mult_gen_0' generated file not found '/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_funcsim.vhdl'. Please regenerate to continue.
+# set_property used_in_implementation false [get_files -all {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp}}]
+# set_property is_locked true [get_files {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file mult_gen_0.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top mult_gen_0 -part xc7vx690tffg1157-2 -mode out_of_context
+Command: synth_design -top mult_gen_0 -part xc7vx690tffg1157-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2015.11' and will expire in -130 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 980.422 ; gain = 147.766 ; free physical = 1073 ; free virtual = 21804
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0' declared at '/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0.vhd:106' bound to instance 'U0' of component 'mult_gen_v12_0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_v12_0__parameterized0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0.vhd:145]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_viv' declared at '/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:20737' bound to instance 'i_mult' of component 'mult_gen_v12_0_viv' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_v12_0_viv__parameterized0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:20786]
+INFO: [Synth 8-638] synthesizing module 'dsp' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:9905]
+INFO: [Synth 8-638] synthesizing module 'op_resize' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4018]
+INFO: [Synth 8-256] done synthesizing module 'op_resize' (1#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4018]
+INFO: [Synth 8-638] synthesizing module 'delay_line' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-256] done synthesizing module 'delay_line' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized0' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized1' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized2' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4287]
+INFO: [Synth 8-113] binding component instance 'i_fdre' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4299]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized2' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized3' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized3' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-113] binding component instance 'iDSP48E1' to cell 'DSP48E1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:11062]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized4' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e0' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4243]
+INFO: [Synth 8-113] binding component instance 'i_fdre0' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4255]
+INFO: [Synth 8-113] binding component instance 'i_srl16e1' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-113] binding component instance 'i_fdre1' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4276]
+INFO: [Synth 8-113] binding component instance 'i_srl16e' to cell 'SRL16E' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4287]
+INFO: [Synth 8-113] binding component instance 'i_fdre' to cell 'FDRE' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4299]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized4' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized5' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized5' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-113] binding component instance 'iDSP48E1' to cell 'DSP48E1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:11062]
+INFO: [Synth 8-113] binding component instance 'iDSP48E1' to cell 'DSP48E1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:11062]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized6' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized6' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-113] binding component instance 'iDSP48E1' to cell 'DSP48E1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:11062]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized7' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized7' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:4150]
+INFO: [Synth 8-256] done synthesizing module 'dsp' (3#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:9905]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_v12_0_viv__parameterized0' (4#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:20786]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_v12_0__parameterized0' (5#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_v12_0/hdl/mult_gen_v12_0.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (6#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1026.688 ; gain = 194.031 ; free physical = 1026 ; free virtual = 21757
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1026.688 ; gain = 194.031 ; free physical = 1026 ; free virtual = 21757
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockRegion.xml
+Loading clock buffers from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockBuffers.xml
+Loading clock placement rules from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ffg1157/Package.xml
+Loading io standards from /home/software/vivado-2014.4/Vivado/2014.4/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1439.188 ; gain = 0.000 ; free physical = 647 ; free virtual = 21392
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 649 ; free virtual = 21392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 649 ; free virtual = 21392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 649 ; free virtual = 21392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 644 ; free virtual = 21387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 644 ; free virtual = 21387
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 644 ; free virtual = 21387
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 644 ; free virtual = 21387
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 644 ; free virtual = 21387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 644 ; free virtual = 21387
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 644 ; free virtual = 21387
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1439.188 ; gain = 606.531 ; free physical = 644 ; free virtual = 21387
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1475.152 ; gain = 642.496 ; free physical = 590 ; free virtual = 21340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1476.152 ; gain = 643.496 ; free physical = 585 ; free virtual = 21339
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[0].i_fdre0 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[0].i_fdre1 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[1].i_fdre0 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[1].i_fdre1 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[2].i_fdre0 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[2].i_fdre1 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[3].i_fdre0 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[3].i_fdre1 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[4].i_fdre0 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[4].i_fdre1 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[5].i_fdre0 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[5].i_fdre1 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[6].i_fdre0 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[6].i_fdre1 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[7].i_fdre0 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[7].i_fdre1 ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.iBdelx[1].iBdely[0].need_delay_line.Bdelay/d1.dout_i_reg[17] ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] ) is unused and will be removed from module mult_gen_v12_0_viv__parameterized0.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1486.168 ; gain = 653.512 ; free physical = 573 ; free virtual = 21328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1486.168 ; gain = 653.512 ; free physical = 569 ; free virtual = 21327
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1486.168 ; gain = 653.512 ; free physical = 569 ; free virtual = 21327
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1486.168 ; gain = 653.512 ; free physical = 569 ; free virtual = 21327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |DSP48E1   |     1|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     1|
+|5     |SRL16E    |    16|
+|6     |FDRE      |    50|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1486.168 ; gain = 653.512 ; free physical = 569 ; free virtual = 21327
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1486.168 ; gain = 138.211 ; free physical = 568 ; free virtual = 21327
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1486.168 ; gain = 653.512 ; free physical = 568 ; free virtual = 21327
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1496.168 ; gain = 560.746 ; free physical = 573 ; free virtual = 21316
+# rename_ref -prefix_all mult_gen_0_
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+# write_checkpoint -noxdef mult_gen_0.dcp
+# catch { report_utilization -file mult_gen_0_utilization_synth.rpt -pb mult_gen_0_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1496.199 ; gain = 0.000 ; free physical = 585 ; free virtual = 21316
+# if { [catch {
+#   file copy -force {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/mult_gen_0.dcp} {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp}
+# } _RESULT ] } { 
+#   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+# }
+# if { [catch {
+#   write_verilog -force -mode synth_stub {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.v}
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode synth_stub {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.vhdl}
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_verilog -force -mode funcsim {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_funcsim.v}
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode funcsim {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_funcsim.vhdl}
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  8 16:22:10 2016...
