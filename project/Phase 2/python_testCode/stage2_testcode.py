@@ -1,19 +1,16 @@
 from math import sin, cos
+from generateConstants import generateConstants
+from convForHex import convForHex
 
-def stage2(transcr, transcb):
-	leftSub = transcb - 109.38
-	rightSub = 152.02 - transcr
-	Sint = sin(2.53)
-	NSint = -1 * Sint
-	Cost = cos(2.53)
-	out1 = leftSub * Cost + rightSub * Sint
-	out2 = ((-1.0 * Sint) * leftSub) + Cost * rightSub
+def stage2(transcr, transcb, numOfFractionalBits):
+	const = generateConstants(6)
+	leftSub = transcb - const['Cx']
+	rightSub = const['Cy'] - transcr
+	out1 = leftSub * const['Cost'] + rightSub * const['Sint']
+	out2 = const['NSint'] * leftSub + const['Cost'] * rightSub
 
-	print("%d, %d" %(out1 * 64, out2 * 64))
-
-
-stage2(1,1)
+	print("Stage2: 0x%s, 0x%s" %(convForHex(out1,numOfFractionalBits), convForHex(out2,numOfFractionalBits)))
 
 
-
+stage2(1,1,6)
 
