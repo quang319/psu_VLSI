@@ -1,0 +1,28 @@
+{C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v} {2 {vlog -work work -stats=none {C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module TB
+** Warning: C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v(32): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v(42): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v(44): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	TB
+
+} {} {}} {C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/FPAdder.v} {1 {vlog -work work -stats=none {C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module TB
+
+Top level modules:
+	TB
+
+} {} {}} {C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/FPMult.v} {1 {vlog -work work -stats=none {C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/FPMult.v}
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module FPMult
+
+Top level modules:
+	FPMult
+
+} {} {}}

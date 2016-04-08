@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/15.1
+vFPAdder
+!s110 1460072449
+!i10b 1
+!s100 L8Jdj@zMBjOY`fFHcfHTa0
+IE;=<3DFhemYj^egX:>k080
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder
+w1460071623
+8C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\verilog2\FPAdder\FPAdder.v
+FC:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\verilog2\FPAdder\FPAdder.v
+L0 3
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1460072432.000000
+!s107 C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\verilog2\FPAdder\FPAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\quang\Dropbox\School\Penn State\Spring\CSE 557 - VLSI\project\Phase 2\verilog2\FPAdder\FPAdder.v|
+!i113 1
+Z3 o-work work
+n@f@p@adder
+vFPMult
+!s110 1460073869
+!i10b 1
+!s100 YKC8FhklW@ZdZMhGOSAlF3
+IBPen^M1g]FV::Fm_3GQbW2
+R0
+R1
+w1460073857
+8C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/FPMult.v
+FC:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/FPMult.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1460073869.000000
+!s107 C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/FPMult.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/FPMult.v|
+!i113 1
+R3
+n@f@p@mult
+vTB
+!s110 1460074119
+!i10b 1
+!s100 Yzea?fHZ1T5zF8RED6?JQ0
+IS]KNLAdgC1SW^dP]R_5:23
+R0
+R1
+w1460074107
+8C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v
+FC:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1460074119.000000
+!s107 C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/quang/Dropbox/School/Penn State/Spring/CSE 557 - VLSI/project/Phase 2/verilog2/FPAdder/TB.v|
+!i113 1
+R3
+n@t@b

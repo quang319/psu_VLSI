@@ -1,0 +1,47 @@
+`timescale 1ns/1ns
+
+module TB;
+	reg clk;
+	reg [7:0] Y;
+	reg [7:0] Cr;
+	wire [15:0] Result;
+
+	reg [15:0] Y2;
+	reg [15:0] Cr2;
+	wire [15:0] Result2;
+
+	FPAdder uut(
+		.clk(clk),
+		.Y(Y),
+		.Cr(Cr),
+		.Result(Result)
+		);
+
+	FPMult uut2(
+		.clk(clk2),
+		.Y(Y2),
+		.Cr(Cr2),
+		.Result(Result2)
+		);
+
+	initial begin
+		clk = 1'b0;
+		Y = 8'h00;
+		Cr	= 8'h00;
+		Y2 = 16'h0000;
+		Cr2	= 8'h0000;
+
+		#100;
+	end
+
+	always
+		#1 clk = ~clk;
+
+	always begin
+		#10 Y <= 8'h01;
+		#10 Y2 <= 8'h0100;
+		#10 Cr <= 8'h01;
+		#10 Cr2 <= 8'h0200;
+	end
+
+endmodule
