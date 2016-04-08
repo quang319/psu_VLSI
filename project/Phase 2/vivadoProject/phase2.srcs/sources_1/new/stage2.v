@@ -33,13 +33,13 @@ module stage2(
 	reg signed [31:0] leftMult1, leftMult2, rightMult1, rightMult2;
 
 	always @(posedge clk) begin
-		leftSub <= rTransCb - {`Cx, 8'h00};
-		rightSub <= {`Cy, 8'h00} - rTransCr;
+		leftSub <= rTransCb -`Cx;
+		rightSub <=`Cy - rTransCr;
 
-		leftMult1 <= `NSint * leftSub;
-		leftMult2 <= leftSub * `Cost;
-		rightMult1 <= `Cost * rightSub;
-		rightMult2 <= rightSub * `Sint;
+		leftMult1 <= { {16{1'b1}}, `NSint} * { {16{leftSub[15]}}, leftSub};
+		leftMult2 <= { {16{leftSub[15]}}, leftSub} * { {16{1'b1}}, `Cost};
+		rightMult1 <= { {16{1'b1}}, `Cost} * { {16{rightSub[15]}}, rightSub};
+		rightMult2 <= { {16{rightSub[15]}}, rightSub} * { {16{1'b0}}, `Sint};
 
 		leftOutput <= leftMult2[23:7] + rightMult2[23:7];
 		rightOutput <= leftMult1[23:7] + rightMult1[23:7];
