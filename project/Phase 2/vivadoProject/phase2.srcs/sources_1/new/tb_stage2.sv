@@ -22,13 +22,13 @@
 
 module tb_stage2;
 	reg clk;
-	reg signed [15:0] rTransCb;
-	reg signed [15:0] rTransCr;
+	reg signed [31:0] rTransCb;
+	reg signed [31:0] rTransCr;
 
-	wire signed [15:0] leftOutput;
-	wire signed [15:0] rightOutput;
+	wire signed [31:0] leftOutput;
+	wire signed [31:0] rightOutput;
 
-	stage2 uut_st2(
+	stage2 uut_st2 (
 		.clk(clk),
 		.rTransCb(rTransCb),
 		.rTransCr(rTransCr),

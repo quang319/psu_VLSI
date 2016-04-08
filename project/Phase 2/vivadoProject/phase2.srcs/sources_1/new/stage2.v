@@ -22,27 +22,29 @@
 
 module stage2(
 	input wire clk,
-	input wire signed [15:0] rTransCb,
-	input wire signed [15:0] rTransCr,
+	input wire signed [DATA_WIDTH - 1 : 0] rTransCb,
+	input wire signed [DATA_WIDTH - 1 : 0] rTransCr,
 
-	output reg signed [15:0] leftOutput,
-	output reg signed [15:0] rightOutput
+	output reg signed [DATA_WIDTH - 1 : 0] leftOutput,
+	output reg signed [DATA_WIDTH - 1 : 0] rightOutput
     );
+	
+	parameter DATA_WIDTH = 32;
 
-	reg signed [15:0] leftSub, rightSub;
-	reg signed [31:0] leftMult1, leftMult2, rightMult1, rightMult2;
+	reg signed [DATA_WIDTH -1:0] leftSub, rightSub;
+	reg signed [(DATA_WIDTH * 2) - 1 :0] leftMult1, leftMult2, rightMult1, rightMult2;
 
 	always @(posedge clk) begin
 		leftSub <= rTransCb -`Cx;
 		rightSub <=`Cy - rTransCr;
 
-		leftMult1 <= { {16{1'b1}}, `NSint} * { {16{leftSub[15]}}, leftSub};
-		leftMult2 <= { {16{leftSub[15]}}, leftSub} * { {16{1'b1}}, `Cost};
-		rightMult1 <= { {16{1'b1}}, `Cost} * { {16{rightSub[15]}}, rightSub};
-		rightMult2 <= { {16{rightSub[15]}}, rightSub} * { {16{1'b0}}, `Sint};
+		leftMult1 <= `NSint * leftSub;
+		leftMult2 <= leftSub * `Cost;
+		rightMult1 <= `Cost * rightSub;
+		rightMult2 <= rightSub * `Sint;
 
-		leftOutput <= leftMult2[23:7] + rightMult2[23:7];
-		rightOutput <= leftMult1[23:7] + rightMult1[23:7];
+		leftOutput <= leftMult2[DATA_WIDTH + DATA_WIDTH / 2 - 1 : DATA_WIDTH / 2 - 1] + rightMult2[DATA_WIDTH + DATA_WIDTH / 2 - 1 : DATA_WIDTH / 2 - 1];
+		rightOutput <= leftMult1[DATA_WIDTH + DATA_WIDTH / 2 - 1 : DATA_WIDTH / 2 - 1] + rightMult1[DATA_WIDTH + DATA_WIDTH / 2 - 1 : DATA_WIDTH / 2 - 1];
 	end
 
 endmodule
