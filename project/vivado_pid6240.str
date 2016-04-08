@@ -1,0 +1,109 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+Process ID: 6240
+
+Current time: 	4/7/16 9:04:57 PM
+Time zone: 	Eastern Standard Time (US/Eastern)
+
+OS: Red Hat Enterprise Linux Workstation release 6.7 (Santiago)
+Version: 2.6.32-573.18.1.el6.x86_64
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: :0.0
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	/home/software/vivado-2014.4/Vivado/2014.4/tps/lnx64/jre
+
+User name: 	qxn5005
+User directory: /home/grads/qxn5005/Documents/psu_VLSI/project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+Vivado preferences path: /home/grads/qxn5005/.Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: /home/grads/qxn5005/.Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	120 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,805 MB
+
+*/
+
+// HColorUtils.generateUniqueColorPalette (num colors: 55) elapsed time: 0.6s
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 62 MB (+62328kb) [00:00:07]
+// [Engine Memory]: 4,804 MB (+4885785kb) [00:00:07]
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // k:JideButton (JPanel:JComponent, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,805 MB. GUI used memory: 26 MB. Current time: 4/7/16 9:04:59 PM
+// [Engine Memory]: 4,805 MB (+1048kb) [00:00:12]
+// [Engine Memory]: 4,805 MB (+233kb) [00:00:17]
+setFileChooser("/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.xpr");
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 4,865 MB (+62681kb) [00:00:20]
+// [Engine Memory]: 4,891 MB (+27840kb) [00:00:21]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/vivado-2014.4/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 4,895 MB (+4194kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 4,899 MB (+3702kb) [00:00:22]
+// [Engine Memory]: 4,900 MB (+1048kb) [00:00:22]
+// [Engine Memory]: 4,901 MB (+1228kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 4,903 MB (+1712kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 4,904 MB (+1204kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 4,906 MB (+2457kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 4,907 MB (+1228kb) [00:00:23]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: phase2; location: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject; part: xc7vx690tffg1157-2
+// 'g' command handler elapsed time: 15 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 5783.059 ; gain = 71.820 ; free physical = 2790 ; free virtual = 23118 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 4,919 MB (+12320kb) [00:00:29]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
