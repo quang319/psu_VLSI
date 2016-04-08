@@ -16,12 +16,11 @@ def generateConstants(numOfFractionalBits, printFlag = 0):
 	constDict['NSint'] = -1 * sin(2.53)
 
 	if (printFlag):
-		[print('`define %s 16\'h%s' %(key, convForHex(constDict[key],numOfFractionalBits))) \
+		[print('`define %s 32\'h%s' %(key, convForHex(constDict[key],numOfFractionalBits,8))) \
 			for key in constDict]
 
 	return constDict
 
-generateConstants(6,1)
-
-
 	
+
+tem = generateConstants(14,1)
