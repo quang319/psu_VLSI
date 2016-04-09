@@ -2311,3 +2311,538 @@ selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_l
 // TclEventType: SIMULATION_UPDATE_OBJECT_TREE
 // TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
 // Tcl Message: run 200 ns 
+// [GUI Memory]: 95 MB (+43kb) [00:51:43]
+// Elapsed time: 749 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 150 ; Array", 2, "150", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 95 MB (+285kb) [00:54:01]
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 150 ; Array", 2, "150", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cb: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "114", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cb} -radix unsigned {114 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cb"); // a:ac (ch:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 20 ; Array", 3, "20", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Y: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "62", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Y} -radix unsigned {62 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Y"); // a:ac (ch:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cr[7:0] ; 90 ; Array", 4, "90", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+// Elapsed time: 12 seconds
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cr: addNotify
+// Elapsed time: 14 seconds
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "159", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cr} -radix unsigned {159 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cr"); // a:ac (ch:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,992 MB. GUI used memory: 38 MB. Current time: 4/9/16 12:32:39 AM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+// Elapsed time: 572 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 62 ; Array", 3, "62", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 62 ; Array", 3, "62", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Y: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "38", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Y} -radix unsigned {38 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Y"); // a:ac (ch:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cr[7:0] ; 159 ; Array", 4, "159", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cr: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "160", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cr} -radix unsigned {160 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cr"); // a:ac (ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 114 ; Array", 2, "114", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 114 ; Array", 2, "114", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cb: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "115", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cb} -radix unsigned {115 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cb"); // a:ac (ch:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,992 MB. GUI used memory: 37 MB. Current time: 4/9/16 12:42:34 AM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,992 MB. GUI used memory: 38 MB. Current time: 4/9/16 12:42:35 AM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Tcl Message: run 200 ns 
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,992 MB. GUI used memory: 38 MB. Current time: 4/9/16 12:42:35 AM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 4,992 MB. GUI used memory: 77 MB. Current time: 4/9/16 12:42:37 AM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+// Elapsed time: 23 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 38 ; Array", 3, "Y[7:0]", 0, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 38 ; Array", 3, "Y[7:0]", 0, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Y: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "112", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Y} -radix unsigned {112 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Y"); // a:ac (ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 115 ; Array", 2, "115", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cr[7:0] ; 160 ; Array", 4, "160", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cr[7:0] ; 160 ; Array", 4, "160", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cr: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "153", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cr} -radix unsigned {153 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cr"); // a:ac (ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 115 ; Array", 2, "115", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 115 ; Array", 2, "115", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cb: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "109", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cb} -radix unsigned {109 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cb"); // a:ac (ch:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,992 MB. GUI used memory: 61 MB. Current time: 4/9/16 12:43:18 AM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,992 MB. GUI used memory: 39 MB. Current time: 4/9/16 12:43:18 AM
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+// Elapsed time: 15 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 112 ; Array", 3, "112", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 112 ; Array", 3, "112", 1, true, false, false, false, false, true); // k:au (JViewport:JComponent, ch:JFrame) - Double Click - Node
+// TclEventType: SIMULATION_OPEN_SOURCE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 112 ; Array", 3, "112", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 112 ; Array", 3, "112", 1, true, false, false, false, false, true); // k:au (JViewport:JComponent, ch:JFrame) - Double Click - Node
+// TclEventType: SIMULATION_OPEN_SOURCE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 112 ; Array", 3, "112", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Y: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "136", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Y} -radix unsigned {136 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Y"); // a:ac (ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 109 ; Array", 2, "109", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cr[7:0] ; 153 ; Array", 4, "153", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cr[7:0] ; 153 ; Array", 4, "153", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cr: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "151", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cr} -radix unsigned {151 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cr"); // a:ac (ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 109 ; Array", 2, "109", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 109 ; Array", 2, "109", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 5", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 109 ; Array", 2, "109", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cb: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "105", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cb} -radix unsigned {105 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cb"); // a:ac (ch:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 4,998 MB. GUI used memory: 39 MB. Current time: 4/9/16 12:44:03 AM
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [Engine Memory]: 4,998 MB (+2101kb) [01:06:14]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 136 ; Array", 3, "136", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Y[7:0] ; 136 ; Array", 3, "136", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Y: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "190", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Y} -radix unsigned {190 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Y"); // a:ac (ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cr[7:0] ; 151 ; Array", 4, "151", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cr[7:0] ; 151 ; Array", 4, "151", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cr: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "156", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cr} -radix unsigned {156 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cr"); // a:ac (ch:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 105 ; Array", 2, "105", 1, true); // k:au (JViewport:JComponent, ch:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Cb[7:0] ; 105 ; Array", 2, "105", 1, true, false, false, false, true, false); // k:au (JViewport:JComponent, ch:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:ac (ch:JFrame): Force Constant:  /tb_skintoneDetector/uut_ST/Cb: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "106", true); // an:JTextField (JPanel:JComponent, a:ac)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:ac)
+// Tcl Message: add_force {/tb_skintoneDetector/uut_ST/Cb} -radix unsigned {106 0ns} 
+dismissDialog("Force Constant:  /tb_skintoneDetector/uut_ST/Cb"); // a:ac (ch:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 4,998 MB. GUI used memory: 39 MB. Current time: 4/9/16 12:44:36 AM
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,998 MB. GUI used memory: 39 MB. Current time: 4/9/16 12:44:38 AM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 200 ns 
