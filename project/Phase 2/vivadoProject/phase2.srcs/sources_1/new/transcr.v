@@ -25,18 +25,75 @@ module transcr(
 	input wire [7:0] Y,
 	input wire [7:0] Cr,
 
-	output reg [15:0] result
+	output reg [31:0] result
     );
-	reg  signed [15:0] MeanCr [0:255];
-	reg  signed [15:0] WidthCr [0:255];
+	wire signed [31:0] wMeanCr, wWidthCr, multOut;
+	reg signed [31:0] rMeanCr, rWidthCr, rWidthCr2;
+	reg rSelectIn;
+	wire wSelectOut;
+	reg [7:0] Cr2;
+	wire [7:0] crShiftRegOut;
 
-	initial begin 
-		$readmemh("MeanCr_LUT.list", MeanCr);
-		$readmemh("MeanCb_LUT.list", WidthCr);
-	end
+	reg signed [31:0] subOut, addOut;
+
+	//
+	//	LUTs instances
+	//
+	meanCr meanCrLUT(
+		.Y(Y),
+		.result(wMeanCr)
+		);
+	widthCr widthCrLUT(
+		.Y(Y),
+		.result(wWidthCr)
+		);
+
+	//
+	//	Shiftreg instances
+	//
+	shiftReg #(
+		.DATA_WIDTH(1),	
+		.NUM_OF_STAGES(8))
+
+		selector(
+			.clk(clk),
+			.newInput(rSelect),
+			.result(wSelectOut)
+			);
+	assign rSelect = (8'd125 <= Y && Y <= 8'd188) ? 1'b1 : 1'b0;
+	shiftReg #(
+		.DATA_WIDTH(8),	
+		.NUM_OF_STAGES(7))
+
+		crShiftReg (
+			.clk(clk),
+			.newInput(Cr2),
+			.result(crShiftRegOut)
+			);
+
+	//
+	//	Multiplier instances
+	//
+	mult_gen_0 mult1 (
+		  .CLK(clk),  // input wire CLK
+		  .A(subOut),      // input wire [31 : 0] A
+		  .B(rWidthCr2),      // input wire [31 : 0] B
+		  .P(multOut)      // output wire [31 : 0] P
+		);
+
 
 	always @(posedge clk) begin
-		result <= MeanCr[Y];
+		rMeanCr <= wMeanCr;
+		rWidthCr <= wWidthCr;
+		Cr2 <= Cr;
+
+		subOut <= { {10{1'b0}}, Cr2, {14{1'b0}}} - rMeanCr;
+		rWidthCr2 <= rWidthCr;
+
+		addOut <=  multOut + 32'h00268000;
+
+		result <= wSelectOut ? { {10{1'b0}}, crShiftRegOut, {14{1'b0}}} :  addOut;
+
 	end 
 
 

@@ -1,5 +1,4 @@
-module widthCr (
-	input wire clk,    // Clock
+module widthCb (
 	input wire [7:0] Y,
 
 	output reg [31:0] result

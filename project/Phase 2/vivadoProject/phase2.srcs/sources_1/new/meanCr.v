@@ -1,5 +1,4 @@
 module meanCr (
-	input wire clk,    // Clock
 	input wire [7:0] Y,
 
 	output reg [31:0] result
