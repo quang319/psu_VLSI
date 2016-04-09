@@ -28,12 +28,11 @@ module skintoneDetector(
 	input wire [7:0] Cr,
 
 	output reg valid_out,
-	output reg [7:0] skinScore
+	output wire [7:0] skinScore
     );
 	
 	wire signed [31:0] cb_stage2, cr_stage2, st2_st3_1, st2_st3_2, st3_st4;
 
-	wire [7:0] skinscore;
 	
 	transcb TransCb (
 		.clk(clk),
@@ -67,6 +66,7 @@ module skintoneDetector(
 	stage4 Stage4(
 		.clk(clk),
 		.in1(st3_st4),
-		.skinscore(skinscore)
+		.skinscore(skinScore)
 		);
+
 endmodule
