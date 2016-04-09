@@ -9,11 +9,12 @@ def generateConstants(numOfFractionalBits, printFlag = 0):
 		'Cx' : 109.38, 'Cy' : 152.02, \
 		'ECx' : 1.60, 'ECy' : 2.41, \
 		'InvA' : (1/25.39), 'InvB' : (1/14.03), \
-		'Y_min' : 16, 'Y_max' : 235 };
+		'Y_min' : 16, 'Y_max' : 235, 'Radius' : 0.5};
 
 	constDict['Sint'] = sin(2.53)
 	constDict['Cost'] = cos(2.53)
 	constDict['NSint'] = -1 * sin(2.53)
+	constDict['fac'] = 255.0 / constDict['Radius']
 
 	if (printFlag):
 		[print('`define %s 32\'h%s' %(key, convForHex(constDict[key],numOfFractionalBits,8))) \
@@ -23,4 +24,4 @@ def generateConstants(numOfFractionalBits, printFlag = 0):
 
 	
 
-# tem = generateConstants(14,1)
+tem = generateConstants(14,1)
