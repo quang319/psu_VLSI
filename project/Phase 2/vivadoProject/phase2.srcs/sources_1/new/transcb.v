@@ -29,7 +29,7 @@ module transcb(
     );
 	wire signed [31:0] wMeanCb, wWidthCb, multOut;
 	reg signed [31:0] rMeanCb, rWidthCb, rWidthCb2;
-	reg rSelectIn;
+	wire rSelectIn;
 	wire wSelectOut;
 	reg [7:0] Cb2;
 	wire [7:0] cbShiftRegOut;
@@ -57,10 +57,10 @@ module transcb(
 
 		selector(
 			.clk(clk),
-			.newInput(rSelect),
+			.newInput(rSelectIn),
 			.result(wSelectOut)
 			);
-	assign rSelect = (8'd125 <= Y && Y <= 8'd188) ? 1'b1 : 1'b0;
+	assign rSelectIn = (8'd125 <= Y && Y <= 8'd188) ? 1'b1 : 1'b0;
 	shiftReg #(
 		.DATA_WIDTH(8),	
 		.NUM_OF_STAGES(7))
