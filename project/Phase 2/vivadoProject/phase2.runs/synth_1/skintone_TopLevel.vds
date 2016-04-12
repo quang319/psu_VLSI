@@ -1,0 +1,831 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Apr 11 21:25:52 2016
+# Process ID: 12406
+# Log file: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/skintone_TopLevel.vds
+# Journal file: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source skintone_TopLevel.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx690tffg1157-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.cache/wt} [current_project]
+# set_property parent.project_path {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.xpr} [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files -quiet {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/mult_gen_0.dcp}}
+# set_property used_in_implementation false [get_files {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/mult_gen_0.dcp}}]
+# read_verilog {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/projectHeader.vh}}
+# set_property file_type "Verilog Header" [get_files {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/projectHeader.vh}}]
+# read_verilog -library xil_defaultlib {
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/mmcm_i125_o100_o200_o400_o600/mmcm_i125_o100_o200_o400_o600_clk_wiz.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v}
+# }
+# read_xdc {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc}}
+# set_property used_in_implementation false [get_files {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc}}]
+# catch { write_hwdef -file skintone_TopLevel.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top skintone_TopLevel -part xc7vx690tffg1157-2
+Command: synth_design -top skintone_TopLevel -part xc7vx690tffg1157-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2015.11' and will expire in -133 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 976.395 ; gain = 143.734 ; free physical = 5161 ; free virtual = 22819
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'skintone_TopLevel' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:22]
+INFO: [Synth 8-638] synthesizing module 'mmcm_i125_o100_o200_o400_o600_clk_wiz' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/mmcm_i125_o100_o200_o400_o600/mmcm_i125_o100_o200_o400_o600_clk_wiz.v:70]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10265]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (1#1) [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10265]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:15990]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter CLKOUT1_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter CLKFBOUT_MULT_F bound to: 48.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 12.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:15990]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [/home/software/vivado-2014.4/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'mmcm_i125_o100_o200_o400_o600_clk_wiz' (4#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/mmcm_i125_o100_o200_o400_o600/mmcm_i125_o100_o200_o400_o600_clk_wiz.v:70]
+INFO: [Synth 8-638] synthesizing module 'skintoneDetector' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:23]
+INFO: [Synth 8-638] synthesizing module 'shiftReg' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 40 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftReg' (5#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+INFO: [Synth 8-638] synthesizing module 'transcb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v:23]
+INFO: [Synth 8-638] synthesizing module 'meanCb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:1]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:8]
+INFO: [Synth 8-256] done synthesizing module 'meanCb' (6#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:1]
+INFO: [Synth 8-638] synthesizing module 'widthCb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:1]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:8]
+INFO: [Synth 8-256] done synthesizing module 'widthCb' (7#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:1]
+INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized0' (7#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized1' (7#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/.Xil/Vivado-12406-p218inst09.cse.psu.edu/realtime/mult_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (8#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/.Xil/Vivado-12406-p218inst09.cse.psu.edu/realtime/mult_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'transcb' (9#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v:23]
+INFO: [Synth 8-638] synthesizing module 'transcr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'meanCr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:1]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:8]
+INFO: [Synth 8-256] done synthesizing module 'meanCr' (10#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:1]
+INFO: [Synth 8-638] synthesizing module 'widthCr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:1]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:8]
+INFO: [Synth 8-256] done synthesizing module 'widthCr' (11#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:1]
+INFO: [Synth 8-256] done synthesizing module 'transcr' (12#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'stage2' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'stage2' (13#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v:23]
+INFO: [Synth 8-638] synthesizing module 'stage3' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'stage3' (14#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v:23]
+INFO: [Synth 8-638] synthesizing module 'stage4' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v:23]
+INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized2' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized2' (14#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'stage4' (15#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'skintoneDetector' (16#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:23]
+WARNING: [Synth 8-3848] Net valid_in in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:38]
+WARNING: [Synth 8-3848] Net Cb in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:39]
+WARNING: [Synth 8-3848] Net Y in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:40]
+WARNING: [Synth 8-3848] Net Cr in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:41]
+INFO: [Synth 8-256] done synthesizing module 'skintone_TopLevel' (17#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1011.691 ; gain = 179.031 ; free physical = 5123 ; free virtual = 22781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:valid_in to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cb[7] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cb[6] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cb[5] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cb[4] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cb[3] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cb[2] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cb[1] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cb[0] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Y[7] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Y[6] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Y[5] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Y[4] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Y[3] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Y[2] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Y[1] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Y[0] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[7] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[6] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[5] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[4] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[3] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[2] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[1] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[0] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1011.691 ; gain = 179.031 ; free physical = 5123 ; free virtual = 22781
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockRegion.xml
+Loading clock buffers from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockBuffers.xml
+Loading clock placement rules from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ffg1157/Package.xml
+Loading io standards from /home/software/vivado-2014.4/Vivado/2014.4/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */refclk_ibuf/O}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:13]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */txoutclk_i.txoutclk_i/O}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:14]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/I0}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:17]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/O}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:17]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/I1}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:19]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/O}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:19]
+INFO: [Timing 38-2] Deriving generated clocks [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:21]
+WARNING: [Vivado 12-646] clock 'clk_125mhz_mux' not found. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:21]
+WARNING: [Vivado 12-646] clock 'clk_250mhz_mux' not found. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:21]
+WARNING: [Vivado 12-508] No pins matched 'get_pins * -hier -filter {NAME  =~ */ext_clk.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1/S*}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:22]
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg1_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:23]
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg2_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'pcie_rst_n'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:26]
+WARNING: [Vivado 12-180] No cells matched 'LBL_SLOT0_IS_HOST_INTERFACE.i_slot0_host_interface/aresetn_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:27]
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg2_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:30]
+WARNING: [Vivado 12-180] No cells matched 'vortex_rst_r_reg[31]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'sys_sw_a'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sys_sw_a'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sys_sw_b'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sys_sw_b'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sys_sw_c'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sys_sw_c'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'pcie_rst_n'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'pcie_rst_n'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'pcie_rst_n'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[4]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[5]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[6]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[7]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[4]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[5]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[6]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'usr_led[7]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'pcie_clk_n'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'pcie_txn[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'pcie_txn[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'pcie_txn[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'pcie_txn[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'prot0_out'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'prot2_in[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'prot2_in[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'prot2_out'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'prot0_out'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'prot2_in[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'prot2_in[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'prot2_out'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'mem_clk_p'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'mem_ref_clk_p'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:159]
+WARNING: [Vivado 12-507] No nets matched 'mem_clk_p'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:168]
+CRITICAL WARNING: [Vivado 12-613] Cannot find cell 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller' in current context, where current instance = '' and current design = 'elab_constrs_1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:169]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:170]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:171]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:172]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:173]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:174]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:175]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:176]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:177]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:178]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:179]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:180]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:181]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:182]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:183]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:184]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:185]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:186]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:187]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:188]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:189]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:190]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:191]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:192]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:193]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:194]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:195]
+WARNING: [Vivado 12-508] No pins matched '*pll*CLKIN1'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:204]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:205]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:209]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:210]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:211]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:214]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:215]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:216]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:219]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:220]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:221]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:224]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:225]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:226]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:229]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:230]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:231]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:234]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:235]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:236]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:241]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:244]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:245]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:246]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:249]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:250]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:254]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:255]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:256]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:259]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:260]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:261]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:264]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:265]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:266]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:269]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:270]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:271]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:274]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:275]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:276]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:279]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:280]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:281]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:284]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:285]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[16]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:286]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:290]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[17]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:291]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:294]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:295]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[18]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:296]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:299]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[19]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:300]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:300]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:919]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */input_[?].iserdes_dq_.iserdesdq}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:919]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:921]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */input_[?].iserdes_dq_.iserdesdq}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:921]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:927]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */DQSFOUND} -of [get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:927]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:929]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:929]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:930]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:930]
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg1_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:940]
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg1_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:941]
+WARNING: [Vivado 12-180] No cells matched '*rst_sync_reg2_reg'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:942]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg/C'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:944]
+CRITICAL WARNING: [Designutils 20-1307] Command '-to' is not supported in the xdc constraint file. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:945]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg/C'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:947]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.i_nifmem_dram_adaptor/i_reset_sync/rst_sync_reg2_reg/PRE'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:947]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:949]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.i_init_calib_complete_sync/rst_sync_reg1_reg/PRE'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:949]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.controller/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:951]
+WARNING: [Vivado 12-508] No pins matched 'LBL_INCLUDE_MEMORY.i_memory_interface/LBL_MEMORY_CONTROLLER.LBL_DDR3_CONTROLLER.i_init_calib_complete_sync/rst_sync_reg2_reg/PRE'. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc:951]
+Finished Parsing XDC File [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/skintone_TopLevel_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/ucf/fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/skintone_TopLevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/skintone_TopLevel_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1497.207 ; gain = 0.000 ; free physical = 4681 ; free virtual = 22343
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4680 ; free virtual = 22343
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4680 ; free virtual = 22343
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4680 ; free virtual = 22343
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net valid_in in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:38]
+WARNING: [Synth 8-3848] Net Cb in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:39]
+WARNING: [Synth 8-3848] Net Y in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:40]
+WARNING: [Synth 8-3848] Net Cr in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:41]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4675 ; free virtual = 22338
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   3 Input     32 Bit       Adders := 2     
++---Registers : 
+	               56 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 20    
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module skintone_TopLevel 
+Detailed RTL Component Info : 
+Module mmcm_i125_o100_o200_o400_o600_clk_wiz 
+Detailed RTL Component Info : 
+Module shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module meanCb 
+Detailed RTL Component Info : 
+Module widthCb 
+Detailed RTL Component Info : 
+Module shiftReg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module shiftReg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+Module transcb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module meanCr 
+Detailed RTL Component Info : 
+Module widthCr 
+Detailed RTL Component Info : 
+Module transcr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module stage2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+Module stage3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+Module shiftReg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module stage4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module skintoneDetector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4675 ; free virtual = 22338
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCr/selector/temp_reg' and it is trimmed from '8' to '7' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCb/selector/temp_reg' and it is trimmed from '8' to '7' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/Stage4/selector/temp_reg' and it is trimmed from '6' to '5' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCb/cbShiftReg/temp_reg' and it is trimmed from '56' to '48' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCr/crShiftReg/temp_reg' and it is trimmed from '56' to '48' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4675 ; free virtual = 22338
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4675 ; free virtual = 22338
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[4] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[3] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[2] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[1] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[0] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/result_reg[0] ) is unused and will be removed from module skintone_TopLevel.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[20] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[19] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[18] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[17] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[7] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[6] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[5] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[4] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[3] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[2] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[1] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[0] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[31] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[30] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[29] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[28] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[27] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[26] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[25] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[24] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[23] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[22] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[21] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[20] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[19] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[18] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[17] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[16] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[15] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[14] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[13] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[12] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[11] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[10] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[9] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[8] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[7] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[6] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[5] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[4] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[3] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[2] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[1] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[0] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[31] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[30] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[29] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[28] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[27] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[26] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[25] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[24] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[23] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[22] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[21] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[20] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[19] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[17] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[16] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[13] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[8] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[5] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[3] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[2] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[1] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[0] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rMeanCr_reg[21] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rMeanCr_reg[20] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[7] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[6] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[5] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[4] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[3] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[2] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[1] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[0] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[31] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[30] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[29] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[28] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[27] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[26] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[25] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[24] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[23] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[22] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[21] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[20] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[19] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[18] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[17] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[16] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[15] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[14] ) is unused and will be removed from module skintone_TopLevel.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mult_gen_0    |        11|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |mult_gen_0     |     1|
+|2     |mult_gen_0__1  |     1|
+|3     |mult_gen_0__10 |     1|
+|4     |mult_gen_0__2  |     1|
+|5     |mult_gen_0__3  |     1|
+|6     |mult_gen_0__4  |     1|
+|7     |mult_gen_0__5  |     1|
+|8     |mult_gen_0__6  |     1|
+|9     |mult_gen_0__7  |     1|
+|10    |mult_gen_0__8  |     1|
+|11    |mult_gen_0__9  |     1|
+|12    |BUFG           |     5|
+|13    |CARRY4         |    90|
+|14    |LUT1           |   252|
+|15    |LUT2           |    96|
+|16    |MMCME2_ADV     |     1|
+|17    |FDRE           |   504|
+|18    |IBUF           |     1|
+|19    |IBUFDS         |     1|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------------+--------------------------------------+------+
+|      |Instance        |Module                                |Cells |
++------+----------------+--------------------------------------+------+
+|1     |top             |                                      |  4822|
+|2     |  i_clock_synth |mmcm_i125_o100_o200_o400_o600_clk_wiz |     8|
+|3     |  uut_skintone  |skintoneDetector                      |  4813|
+|4     |    Stage2      |stage2                                |  1705|
+|5     |    Stage4      |stage4                                |   424|
+|6     |    TransCb     |transcb                               |   555|
+|7     |    TransCr     |transcr                               |   535|
+|8     |    stage3      |stage3                                |  1594|
++------+----------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 274 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1497.207 ; gain = 76.266 ; free physical = 4665 ; free virtual = 22328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 301 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1503.180 ; gain = 571.754 ; free physical = 4657 ; free virtual = 22320
+# write_checkpoint -noxdef skintone_TopLevel.dcp
+# catch { report_utilization -file skintone_TopLevel_utilization_synth.rpt -pb skintone_TopLevel_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1503.211 ; gain = 0.000 ; free physical = 4656 ; free virtual = 22319
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 21:26:37 2016...

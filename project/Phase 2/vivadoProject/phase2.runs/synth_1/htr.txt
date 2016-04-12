@@ -6,4 +6,4 @@
 # Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log tb_skintoneDetector.vds -m64 -mode batch -messageDb vivado.pb -source tb_skintoneDetector.tcl
+vivado -log skintone_TopLevel.vds -m64 -mode batch -messageDb vivado.pb -source skintone_TopLevel.tcl
