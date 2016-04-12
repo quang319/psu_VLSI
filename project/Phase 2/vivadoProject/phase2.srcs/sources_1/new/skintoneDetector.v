@@ -31,9 +31,29 @@ module skintoneDetector(
 	output wire [7:0] skinScore
     );
 	
+	wire wValid_out;
 	wire signed [31:0] cb_stage2, cr_stage2, st2_st3_1, st2_st3_2, st3_st4;
 
+	//
+	//	Shiftreg instances
+	//
+	shiftReg #(
+		.DATA_WIDTH(1),	
+		.NUM_OF_STAGES(40))
+
+		selector(
+			.clk(clk),
+			.newInput(valid_in),
+			.result(wValid_out)
+			);
+
+	always @(posedge clk) begin
+		valid_out = wValid_out;
+	end
 	
+	//
+	//	Stages for project
+	//
 	transcb TransCb (
 		.clk(clk),
 		.Y(Y),

@@ -61,6 +61,7 @@ module transcr(
 			.result(wSelectOut)
 			);
 	assign rSelectIn = (8'd125 <= Y && Y <= 8'd188) ? 1'b1 : 1'b0;
+	
 	shiftReg #(
 		.DATA_WIDTH(8),	
 		.NUM_OF_STAGES(7))

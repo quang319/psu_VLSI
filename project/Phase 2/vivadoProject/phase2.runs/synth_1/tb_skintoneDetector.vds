@@ -1,0 +1,588 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Apr 11 20:42:12 2016
+# Process ID: 11514
+# Log file: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/tb_skintoneDetector.vds
+# Journal file: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source tb_skintoneDetector.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx690tffg1157-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.cache/wt} [current_project]
+# set_property parent.project_path {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.xpr} [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files -quiet {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/mult_gen_0.dcp}}
+# set_property used_in_implementation false [get_files {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/mult_gen_0_synth_1/mult_gen_0.dcp}}]
+# read_verilog {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/projectHeader.vh}}
+# set_property file_type "Verilog Header" [get_files {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/projectHeader.vh}}]
+# read_verilog -library xil_defaultlib -sv {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv}}
+# read_verilog -library xil_defaultlib {
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v}
+# }
+# catch { write_hwdef -file tb_skintoneDetector.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top tb_skintoneDetector -part xc7vx690tffg1157-2
+Command: synth_design -top tb_skintoneDetector -part xc7vx690tffg1157-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2015.11' and will expire in -133 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 976.398 ; gain = 143.734 ; free physical = 5621 ; free virtual = 23050
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tb_skintoneDetector' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:1]
+INFO: [Synth 8-638] synthesizing module 'skintoneDetector' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:23]
+INFO: [Synth 8-638] synthesizing module 'shiftReg' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 40 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftReg' (1#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+INFO: [Synth 8-638] synthesizing module 'transcb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v:23]
+INFO: [Synth 8-638] synthesizing module 'meanCb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:1]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:8]
+INFO: [Synth 8-256] done synthesizing module 'meanCb' (2#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:1]
+INFO: [Synth 8-638] synthesizing module 'widthCb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:1]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:8]
+INFO: [Synth 8-256] done synthesizing module 'widthCb' (3#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:1]
+INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized0' (3#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized1' (3#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/.Xil/Vivado-11514-p218inst09.cse.psu.edu/realtime/mult_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (4#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/.Xil/Vivado-11514-p218inst09.cse.psu.edu/realtime/mult_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'transcb' (5#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v:23]
+INFO: [Synth 8-638] synthesizing module 'transcr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'meanCr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:1]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:8]
+INFO: [Synth 8-256] done synthesizing module 'meanCr' (6#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:1]
+INFO: [Synth 8-638] synthesizing module 'widthCr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:1]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:8]
+INFO: [Synth 8-256] done synthesizing module 'widthCr' (7#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:1]
+INFO: [Synth 8-256] done synthesizing module 'transcr' (8#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'stage2' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'stage2' (9#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v:23]
+INFO: [Synth 8-638] synthesizing module 'stage3' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'stage3' (10#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v:23]
+INFO: [Synth 8-638] synthesizing module 'stage4' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v:23]
+INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized2' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized2' (10#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'stage4' (11#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'skintoneDetector' (12#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:23]
+WARNING: [Synth 8-3848] Net clk in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:2]
+WARNING: [Synth 8-3848] Net valid_in in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:3]
+WARNING: [Synth 8-3848] Net Cb in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:4]
+WARNING: [Synth 8-3848] Net Y in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:5]
+WARNING: [Synth 8-3848] Net Cr in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:6]
+INFO: [Synth 8-256] done synthesizing module 'tb_skintoneDetector' (13#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1011.695 ; gain = 179.031 ; free physical = 5583 ; free virtual = 23013
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:clk to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:valid_in to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cb[7] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cb[6] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cb[5] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cb[4] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cb[3] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cb[2] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cb[1] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cb[0] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Y[7] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Y[6] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Y[5] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Y[4] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Y[3] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Y[2] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Y[1] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Y[0] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cr[7] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cr[6] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cr[5] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cr[4] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cr[3] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cr[2] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cr[1] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+WARNING: [Synth 8-3295] tying undriven pin uut_ST:Cr[0] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:11]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1011.695 ; gain = 179.031 ; free physical = 5583 ; free virtual = 23012
+---------------------------------------------------------------------------------
+Loading clock regions from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockRegion.xml
+Loading clock buffers from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockBuffers.xml
+Loading clock placement rules from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ffg1157/Package.xml
+Loading io standards from /home/software/vivado-2014.4/Vivado/2014.4/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/software/vivado-2014.4/Vivado/2014.4/data/parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1487.195 ; gain = 0.000 ; free physical = 5141 ; free virtual = 22667
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5140 ; free virtual = 22666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5140 ; free virtual = 22666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5140 ; free virtual = 22666
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net clk in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:2]
+WARNING: [Synth 8-3848] Net valid_in in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:3]
+WARNING: [Synth 8-3848] Net Cb in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:4]
+WARNING: [Synth 8-3848] Net Y in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:5]
+WARNING: [Synth 8-3848] Net Cr in module/entity tb_skintoneDetector does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/tb_skintoneDetector.sv:6]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5125 ; free virtual = 22651
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   3 Input     32 Bit       Adders := 2     
++---Registers : 
+	               56 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 20    
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tb_skintoneDetector 
+Detailed RTL Component Info : 
+Module shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module meanCb 
+Detailed RTL Component Info : 
+Module widthCb 
+Detailed RTL Component Info : 
+Module shiftReg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module shiftReg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+Module transcb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module meanCr 
+Detailed RTL Component Info : 
+Module widthCr 
+Detailed RTL Component Info : 
+Module transcr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module stage2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+Module stage3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+Module shiftReg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module stage4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module skintoneDetector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5125 ; free virtual = 22651
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_ST/TransCr/selector/temp_reg' and it is trimmed from '8' to '7' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_ST/TransCb/selector/temp_reg' and it is trimmed from '8' to '7' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_ST/Stage4/selector/temp_reg' and it is trimmed from '6' to '5' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_ST/TransCb/cbShiftReg/temp_reg' and it is trimmed from '56' to '48' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_ST/TransCr/crShiftReg/temp_reg' and it is trimmed from '56' to '48' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5124 ; free virtual = 22651
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5124 ; free virtual = 22651
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/Stage4/selector/temp_reg[4] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/Stage4/selector/temp_reg[3] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/Stage4/selector/temp_reg[2] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/Stage4/selector/temp_reg[1] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/Stage4/selector/temp_reg[0] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/Stage4/selector/result_reg[0] ) is unused and will be removed from module tb_skintoneDetector.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5101 ; free virtual = 22629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5101 ; free virtual = 22629
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5101 ; free virtual = 22629
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5101 ; free virtual = 22629
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5042 ; free virtual = 22579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 1487.195 ; gain = 654.531 ; free physical = 5041 ; free virtual = 22578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[20] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[19] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[18] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[17] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[16] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[15] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[14] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[13] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[12] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[11] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[10] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[9] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[8] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[7] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[6] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[5] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[4] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[3] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[2] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[1] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rMeanCb_reg[0] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/Cb2_reg[7] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/Cb2_reg[6] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/Cb2_reg[5] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/Cb2_reg[4] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/Cb2_reg[3] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/Cb2_reg[2] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/Cb2_reg[1] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/Cb2_reg[0] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[31] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[30] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[29] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[28] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[27] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[26] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[25] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[24] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[23] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[22] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[21] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[20] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[19] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[18] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[17] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[16] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[15] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[14] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[13] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[12] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[11] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[10] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[9] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[8] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[7] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[6] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[5] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[4] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[3] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[2] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[1] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/subOut_reg[0] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[31] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[30] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[29] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[28] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[27] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[26] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[25] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[24] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[23] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[22] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[21] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[20] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[19] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[18] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[17] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[16] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[15] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[14] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[13] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[12] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[11] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[10] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[9] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[8] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[7] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[6] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[5] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[4] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[3] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[2] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[1] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb_reg[0] ) is unused and will be removed from module tb_skintoneDetector.
+WARNING: [Synth 8-3332] Sequential element (\uut_ST/TransCb/rWidthCb2_reg[31] ) is unused and will be removed from module tb_skintoneDetector.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1493.176 ; gain = 660.512 ; free physical = 5029 ; free virtual = 22566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1493.176 ; gain = 660.512 ; free physical = 5029 ; free virtual = 22566
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1493.176 ; gain = 660.512 ; free physical = 5029 ; free virtual = 22566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'tb_skintoneDetector' to reference 'skintoneDetector' which has no pins
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1493.176 ; gain = 660.512 ; free physical = 5029 ; free virtual = 22566
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin Stage2:I1 to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:71]
+WARNING: [Synth 8-3295] tying undriven pin Stage4:I1 to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:86]
+WARNING: [Synth 8-3295] tying undriven pin TransCb:I1 to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:57]
+WARNING: [Synth 8-3295] tying undriven pin TransCr:I1 to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:64]
+WARNING: [Synth 8-3295] tying undriven pin stage3:I1 to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:79]
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mult_gen_0    |        11|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |mult_gen_0     |     1|
+|2     |mult_gen_0__1  |     1|
+|3     |mult_gen_0__10 |     1|
+|4     |mult_gen_0__2  |     1|
+|5     |mult_gen_0__3  |     1|
+|6     |mult_gen_0__4  |     1|
+|7     |mult_gen_0__5  |     1|
+|8     |mult_gen_0__6  |     1|
+|9     |mult_gen_0__7  |     1|
+|10    |mult_gen_0__8  |     1|
+|11    |mult_gen_0__9  |     1|
++------+---------------+------+
+
+Report Instance Areas: 
++------+------------+-----------------+------+
+|      |Instance    |Module           |Cells |
++------+------------+-----------------+------+
+|1     |top         |                 |  3872|
+|2     |  uut_ST    |skintoneDetector |  3872|
+|3     |    Stage2  |stage2           |  1408|
+|4     |    Stage4  |stage4           |   352|
+|5     |    TransCb |transcb          |   352|
+|6     |    TransCr |transcr          |   352|
+|7     |    stage3  |stage3           |  1408|
++------+------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1493.176 ; gain = 660.512 ; free physical = 5029 ; free virtual = 22566
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 785 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1493.176 ; gain = 82.246 ; free physical = 5029 ; free virtual = 22566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1493.176 ; gain = 660.512 ; free physical = 5027 ; free virtual = 22564
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1497.207 ; gain = 565.777 ; free physical = 4910 ; free virtual = 22516
+# write_checkpoint -noxdef tb_skintoneDetector.dcp
+# catch { report_utilization -file tb_skintoneDetector_utilization_synth.rpt -pb tb_skintoneDetector_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.37 . Memory (MB): peak = 1497.207 ; gain = 0.000 ; free physical = 4897 ; free virtual = 22506
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 20:43:05 2016...
