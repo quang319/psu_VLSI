@@ -42,12 +42,12 @@ def createFile(nameOfModule, listOfNumbers):
 			file.write("8\'d%s: result = 32\'h%s; \n" %(index, convForHex(listOfNumbers[index], 14)))
 
 
-listMeanCr = [MeanCr(y) for y in range(0,256)]
-listMeanCb = [MeanCb(y) for y in range(0,256)]
-listWidthCr = [WidthCr(y) for y in range(0,256)]
-listWidthCb	= [WidthCb(y) for y in range(0,256)]
+# listMeanCr = [MeanCr(y) for y in range(0,256)]
+# listMeanCb = [MeanCb(y) for y in range(0,256)]
+# listWidthCr = [WidthCr(y) for y in range(0,256)]
+# listWidthCb	= [WidthCb(y) for y in range(0,256)]
 
-createFile("meanCr", listMeanCr)
-createFile("meanCb", listMeanCb)
-createFile("widthCr", listWidthCr)
-createFile("widthCb", listWidthCb)
+# createFile("meanCr", listMeanCr)
+# createFile("meanCb", listMeanCb)
+# createFile("widthCr", listWidthCr)
+# createFile("widthCb", listWidthCb)

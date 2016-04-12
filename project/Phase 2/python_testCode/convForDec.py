@@ -1,2 +1,2 @@
-def convForDec(input, numOfFracBits,numOfdigits):
-	return str(int(input * pow(2,numOfFracBits - 2)))
+def convForDec(input, numOfFracBits = 14,numOfdigits = 8):
+	return str(int(input * pow(2,numOfFracBits)))

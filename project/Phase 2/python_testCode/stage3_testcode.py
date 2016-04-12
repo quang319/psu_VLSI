@@ -3,7 +3,7 @@ from generateConstants import generateConstants
 from convForHex import convForHex
 from convForDec import convForDec
 
-def stage3(leftIn, rightIn, numOfFractionalBits = 14):
+def stage3(leftIn, rightIn, printFlag = 0, numOfFractionalBits = 14):
 	const = generateConstants(numOfFractionalBits)
 
 	leftMult = pow(const['ECx'] - leftIn, 2)
@@ -11,8 +11,9 @@ def stage3(leftIn, rightIn, numOfFractionalBits = 14):
 
 	out1 = leftMult * const['InvA'] + const['InvB'] * rightMult 
 
-	print("Stage3: %s" %convForDec(out1,numOfFractionalBits,8))
+	if(printFlag):
+		print("Stage3: add_out = %s" %convForDec(out1))
 
 	return out1
 
-stage3(1,1)
+# stage3(1,1)

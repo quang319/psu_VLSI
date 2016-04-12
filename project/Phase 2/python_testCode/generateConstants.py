@@ -24,4 +24,4 @@ def generateConstants(numOfFractionalBits, printFlag = 0):
 
 	
 
-tem = generateConstants(14,1)
+# tem = generateConstants(14,1)
