@@ -21,7 +21,7 @@
 
 
 module tb_stage2;
-	reg clk;
+	reg clk = 0;
 	reg signed [31:0] rTransCb;
 	reg signed [31:0] rTransCr;
 
@@ -31,7 +31,7 @@ module tb_stage2;
 	// reg signed [31:0] rLeftOutput;
 	// reg signed [31:0] rRightOutput;
 
-	int i;
+	int i,f, r;
 
 	stage2 uut_st2 (
 		.clk(clk),
@@ -41,23 +41,20 @@ module tb_stage2;
 		.rightOutput(wRightOutput)
 		);
 
-	always #5 clk =~ clk;
-
-	// Set clk value 
-	intitial begin
-		clk = 0;
+	always begin 
+		#5 clk =~ clk;
 	end
 
 	initial begin 
-		f = $fopen("stage2_output.txt","w");
+		#200;
+		f = $fopen("stage2_output.txt", "w+");
 		for (i = 0; i < 20; i = i + 1 ) begin
 			@(posedge clk);
-			rTransCb <= 32d'2469953;
-			rTransCb <= 32d'1749319;
+			rTransCb <= 2469953;
+			rTransCr <= 1749319;
 			// rLeftOutput <= wLeftOutput;
 			// rRightOutput <= wRightOutput;
-			$display("%d, %d, %d\n",i, wLeftOutput, wRightOutput);
-			$fwrite("%d, %d, %d\n",i, wLeftOutput, wRightOutput);
+			$fdisplay(f, "%d, %d, %d",i, wLeftOutput, wRightOutput);
 		end
 		$fclose(f);
 		$finish;

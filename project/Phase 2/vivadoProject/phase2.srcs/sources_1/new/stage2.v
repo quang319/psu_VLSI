@@ -22,17 +22,17 @@
 
 module stage2(
 	input wire clk,
-	input wire signed [DATA_WIDTH - 1 : 0] rTransCb,
-	input wire signed [DATA_WIDTH - 1 : 0] rTransCr,
+	input wire signed [31 : 0] rTransCb,
+	input wire signed [31 : 0] rTransCr,
 
-	output reg signed [DATA_WIDTH - 1 : 0] leftOutput,
-	output reg signed [DATA_WIDTH - 1 : 0] rightOutput
+	output reg signed [31 : 0] leftOutput,
+	output reg signed [31 : 0] rightOutput
     );
 	
-	parameter DATA_WIDTH = 32;
+	// parameter DATA_WIDTH = 32;
 
-	reg signed [DATA_WIDTH -1:0] leftSub, rightSub;
-	wire signed [DATA_WIDTH - 1 :0] leftMult1, leftMult2, rightMult1, rightMult2;
+	reg signed [31:0] leftSub, rightSub;
+	wire signed [31 :0] leftMult1, leftMult2, rightMult1, rightMult2;
 
 	always @(posedge clk) begin
 		leftSub <= rTransCb -`Cx;
