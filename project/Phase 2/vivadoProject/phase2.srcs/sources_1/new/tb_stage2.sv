@@ -47,7 +47,7 @@ module tb_stage2;
 	initial begin 
 		#200;
 		file_out = $fopen("stage2_output.csv", "w+");
-		file_in = $fopen("stage2_input.csv","r");
+		file_in = $fopen("stage2_input.csv","r+");
 		for (i = 0; i < 20; i = i + 1 ) begin
 			@(posedge clk);
 			$fscanf(file_in, "%d, %d\n", inputTransCr, inputTransCb);
@@ -57,7 +57,8 @@ module tb_stage2;
 			end
 			$fdisplay(file_out, "%d, %d, %d",i, wLeftOutput, wRightOutput);
 		end
-		$fclose(f);
+		$fclose(file_out);
+		$fclose(file_in);
 		$finish;
 	end
 endmodule
