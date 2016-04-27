@@ -28,9 +28,9 @@ module tb_stage2;
 	wire signed [31:0] wLeftOutput;
 	wire signed [31:0] wRightOutput;
 
-	reg signed [31:0] inputTransCr, inputTransCb;
+	logic signed [31:0] inputTransCr, inputTransCb;
 
-	int i, file_out, file_in;
+	int i, file_out, file_in, scan_file;
 
 	stage2 uut_st2 (
 		.clk(clk),
@@ -46,19 +46,18 @@ module tb_stage2;
 
 	initial begin 
 		#200;
-		file_out = $fopen("stage2_output.csv", "w+");
-		file_in = $fopen("stage2_input.csv","r+");
+		// file_out = $fopen("stage2_output.csv", "w+");
+		file_in = $fopen("stage2_input.csv","r");
 		for (i = 0; i < 20; i = i + 1 ) begin
 			@(posedge clk);
-			$fscanf(file_in, "%d, %d\n", inputTransCr, inputTransCb);
+			scan_file = $fscanf(file_in, "%d\n", inputTransCr);
 			if (!$feof(file_in)) begin
-				rTransCb <= inputTransCb;
+				rTransCb <= inputTransCr;
 				rTransCr <= inputTransCr;
 			end
-			$fdisplay(file_out, "%d, %d, %d",i, wLeftOutput, wRightOutput);
+			// $fdisplay(file_out, "%d, %d, %d",i, wLeftOutput, wRightOutput);
 		end
-		$fclose(file_out);
-		$fclose(file_in);
+		// $fclose(file_out);
 		$finish;
 	end
 endmodule
