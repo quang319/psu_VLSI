@@ -22,65 +22,53 @@
 
 module stage3(
 	input wire clk,
-	input wire signed [DATA_WIDTH - 1 : 0] leftInput,
-	input wire signed [DATA_WIDTH - 1 : 0] rightInput,
+	input wire signed [31 : 0] leftInput,
+	input wire signed [31 : 0] rightInput,
 
-	output reg signed [DATA_WIDTH - 1 : 0] rOutput
+	output reg signed [31 : 0] rOutput
     );
-	parameter DATA_WIDTH = 32;
 
-	reg signed [DATA_WIDTH -1 : 0] leftSub, rightSub;
+	reg signed [31 : 0] leftSub = 32'd0, rightSub = 32'd0, tempLeftMult1 = 32'd0, tempLeftMult2 = 32'd0, tempRightMult1 = 32'd0, tempRightMult2 = 32'd0;
 	// reg signed [DATA_WIDTH * 2 - 1 :0] leftMult1, leftMult2, rightMult1, rightMult2;
-	wire signed [DATA_WIDTH - 1 :0] leftMult1, leftMult2, rightMult1, rightMult2;
+	wire signed [63 :0] leftMult1, leftMult2, rightMult1, rightMult2;
 
 	always @(posedge clk) begin
-		leftSub <= `ECx - leftInput;
+		leftSub <= leftInput - `ECx;
 		rightSub <= rightInput - `ECy;
+		tempLeftMult1 <= {leftMult1[63], leftMult1[44 : 14]};
+		tempRightMult1 <= {rightMult1[63], rightMult1[44 : 14]};
+		tempLeftMult2 <= {leftMult2[63], leftMult2[44 : 14]};
+		tempRightMult2 <= {rightMult2[63], rightMult2[44 : 14]};
 
-		// leftMult1 <= { {DATA_WIDTH{leftSub[DATA_WIDTH-1]}} , leftSub} * 
-		// 	{ {DATA_WIDTH{leftSub[DATA_WIDTH-1]}} , leftSub};
-		// rightMult1 <= { {DATA_WIDTH{rightSub[DATA_WIDTH-1]}} , rightSub} * 
-		// 	{ {DATA_WIDTH{rightSub[DATA_WIDTH-1]}} , rightSub};
-
-		// leftMult2 <= { {DATA_WIDTH{leftMult1[DATA_WIDTH + DATA_WIDTH / 2 - 1]}},
-		// 	leftMult1[DATA_WIDTH + DATA_WIDTH / 2 - 1 : DATA_WIDTH / 2 - 1]} *
-		// 	{ {DATA_WIDTH{1'b0}} , `InvA};
-		// rightMult2 <= { {DATA_WIDTH{1'b0}} , `InvB} * 
-		// 	{ {DATA_WIDTH{rightMult1[DATA_WIDTH + DATA_WIDTH / 2 - 1]}},
-		// 	rightMult1[DATA_WIDTH + DATA_WIDTH / 2 - 1 : DATA_WIDTH / 2 - 1]};
-
-		// rOutput <= leftMult2[DATA_WIDTH + (DATA_WIDTH / 2) - 1 : (DATA_WIDTH / 2) - 1] +
-		// 	rightMult2[DATA_WIDTH + (DATA_WIDTH / 2) - 1 : (DATA_WIDTH / 2) - 1];
-
-		rOutput <= leftMult2 + rightMult2;
+		rOutput <=  tempLeftMult2 + tempRightMult2 ;
 	end
 
 	mult_gen_0 mult1 (
 		  .CLK(clk),  // input wire CLK
 		  .A(leftSub),      // input wire [31 : 0] A
 		  .B(leftSub),      // input wire [31 : 0] B
-		  .P(leftMult1)      // output wire [31 : 0] P
+		  .P(leftMult1)      // output wire [63 : 0] P
 		);
 
 	mult_gen_0 mult2 (
 		  .CLK(clk),  // input wire CLK
 		  .A(rightSub),      // input wire [31 : 0] A
 		  .B(rightSub),      // input wire [31 : 0] B
-		  .P(rightMult1)      // output wire [31 : 0] P
+		  .P(rightMult1)      // output wire [63 : 0] P
 		);
 
 	mult_gen_0 mult3 (
 		  .CLK(clk),  // input wire CLK
-		  .A(leftMult1),      // input wire [31 : 0] A
+		  .A(tempLeftMult1),      // input wire [31 : 0] A
 		  .B(`InvA),      // input wire [31 : 0] B
-		  .P(leftMult2)      // output wire [31 : 0] P
+		  .P(leftMult2)      // output wire [63 : 0] P
 		);
 
 	mult_gen_0 mult4 (
 		  .CLK(clk),  // input wire CLK
 		  .A(`InvB),      // input wire [31 : 0] A
-		  .B(rightMult1),      // input wire [31 : 0] B
-		  .P(rightMult2)      // output wire [31 : 0] P
+		  .B(tempRightMult1),      // input wire [31 : 0] B
+		  .P(rightMult2)      // output wire [63 : 0] P
 		);
 
 
