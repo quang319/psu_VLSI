@@ -1,7 +1,7 @@
 // Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-// Date        : Thu Apr 28 00:41:38 2016
+// Date        : Thu Apr 28 01:13:07 2016
 // Host        : p218inst09.cse.psu.edu running 64-bit Red Hat Enterprise Linux Workstation release 6.7 (Santiago)
 // Command     : write_verilog -force -mode synth_stub {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase
 //               2/vivadoProject/phase2.srcs/sources_1/ip/mult_gen_0/mult_gen_0_stub.v}
