@@ -6,4 +6,4 @@
 # Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log tb_stage2.vds -m64 -mode batch -messageDb vivado.pb -source tb_stage2.tcl
+vivado -log tb_stage2.vdi -applog -m64 -messageDb vivado.pb -mode batch -source tb_stage2.tcl -notrace

@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Fri Apr  8 16:22:09 2016
-| Host         : p218inst10.cse.psu.edu running 64-bit Red Hat Enterprise Linux Workstation release 6.7 (Santiago)
+| Date         : Wed Apr 27 19:50:11 2016
+| Host         : p218inst09.cse.psu.edu running 64-bit Red Hat Enterprise Linux Workstation release 6.7 (Santiago)
 | Command      : report_utilization -file mult_gen_0_utilization_synth.rpt -pb mult_gen_0_utilization_synth.pb
 | Design       : mult_gen_0
 | Device       : xc7vx690t
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |    9 |     0 |    433200 | <0.01 |
+| Slice LUTs*                |   17 |     0 |    433200 | <0.01 |
 |   LUT as Logic             |    0 |     0 |    433200 |  0.00 |
-|   LUT as Memory            |    9 |     0 |    174200 | <0.01 |
+|   LUT as Memory            |   17 |     0 |    174200 | <0.01 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |    9 |     0 |           |       |
-| Slice Registers            |   50 |     0 |    866400 | <0.01 |
-|   Register as Flip Flop    |   50 |     0 |    866400 | <0.01 |
+|     LUT as Shift Register  |   17 |     0 |           |       |
+| Slice Registers            |   64 |     0 |    866400 | <0.01 |
+|   Register as Flip Flop    |   64 |     0 |    866400 | <0.01 |
 |   Register as Latch        |    0 |     0 |    866400 |  0.00 |
 | F7 Muxes                   |    0 |     0 |    216600 |  0.00 |
 | F8 Muxes                   |    0 |     0 |    108300 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 50    |          Yes |       Reset |            - |
+| 64    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -153,8 +153,8 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   50 |        Flop & Latch |
-| SRL16E   |   16 |  Distributed Memory |
+| FDRE     |   64 |        Flop & Latch |
+| SRL16E   |   32 |  Distributed Memory |
 | DSP48E1  |    4 |    Block Arithmetic |
 +----------+------+---------------------+
 

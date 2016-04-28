@@ -36,4 +36,8 @@ EAStep()
      fi
 }
 
-EAStep vivado -log tb_stage2.vds -m64 -mode batch -messageDb vivado.pb -source tb_stage2.tcl
+# pre-commands:
+/bin/touch .init_design.begin.rst
+EAStep vivado -log tb_stage2.vdi -applog -m64 -messageDb vivado.pb -mode batch -source tb_stage2.tcl -notrace
+
+
