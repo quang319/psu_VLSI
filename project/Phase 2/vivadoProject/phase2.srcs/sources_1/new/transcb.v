@@ -29,22 +29,24 @@ module transcb(
     );
 	wire signed [31:0] wMeanCb, wWidthCb;
 	wire signed [63:0] multOut;
-	reg signed [31:0] rMeanCb, rWidthCb, rWidthCb2;
+	reg signed [31:0] rMeanCb = 32'd0, rWidthCb = 32'd0, rWidthCb2 = 32'd0;
 	wire rSelectIn;
 	wire wSelectOut;
-	reg [7:0] Cb2;
+	reg [7:0] Cb2 = 8'd0, Cb3 = 8'd0;
 	wire [7:0] cbShiftRegOut;
 
-	reg signed [31:0] subOut, addOut;
+	reg signed [31:0] subOut = 32'd0, addOut = 32'd0;
 
 	//
 	//	LUTs instances
 	//
 	meanCb meanCbLUT(
+		.clk(clk),
 		.Y(Y),
 		.result(wMeanCb)
 		);
 	widthCb widthCbLUT(
+		.clk(clk),
 		.Y(Y),
 		.result(wWidthCb)
 		);
@@ -54,7 +56,7 @@ module transcb(
 	//
 	shiftReg #(
 		.DATA_WIDTH(1),	
-		.NUM_OF_STAGES(8))
+		.NUM_OF_STAGES(10))
 
 		selector(
 			.clk(clk),
@@ -87,11 +89,12 @@ module transcb(
 		rMeanCb <= wMeanCb;
 		rWidthCb <= wWidthCb;
 		Cb2 <= Cb;
+		Cb3 <= Cb2;
 
-		subOut <= { {10{1'b0}}, Cb2, {14{1'b0}}} - rMeanCb;
+		subOut <= { {10{1'b0}}, Cb3, {14{1'b0}}} - rMeanCb;
 		rWidthCb2 <= rWidthCb;
 
-		addOut <=  multOut + 32'h001b0000;
+		addOut <=  {multOut[63], multOut[44 : 14]} + 32'h001b0000;
 
 		result <= wSelectOut ? { {10{1'b0}}, cbShiftRegOut, {14{1'b0}}} :  addOut;
 

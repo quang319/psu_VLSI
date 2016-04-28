@@ -27,23 +27,26 @@ module transcr(
 
 	output reg [31:0] result
     );
-	wire signed [31:0] wMeanCr, wWidthCr, multOut;
-	reg signed [31:0] rMeanCr, rWidthCr, rWidthCr2;
+	wire signed [31:0] wMeanCr, wWidthCr;
+	wire signed [63:0] multOut;
+	reg signed [31:0] rMeanCr = 32'd0, rWidthCr = 32'd0, rWidthCr2 = 32'd0;
 	wire rSelectIn;
 	wire wSelectOut;
-	reg [7:0] Cr2;
+	reg [7:0] Cr2 = 8'd0, Cr3 = 8'd0;
 	wire [7:0] crShiftRegOut;
 
-	reg signed [31:0] subOut, addOut;
+	reg signed [31:0] subOut = 32'd0, addOut = 32'd0;
 
 	//
 	//	LUTs instances
 	//
 	meanCr meanCrLUT(
+		.clk(clk),
 		.Y(Y),
 		.result(wMeanCr)
 		);
 	widthCr widthCrLUT(
+		.clk(clk),
 		.Y(Y),
 		.result(wWidthCr)
 		);
@@ -53,7 +56,7 @@ module transcr(
 	//
 	shiftReg #(
 		.DATA_WIDTH(1),	
-		.NUM_OF_STAGES(8))
+		.NUM_OF_STAGES(10))
 
 		selector(
 			.clk(clk),
@@ -87,11 +90,12 @@ module transcr(
 		rMeanCr <= wMeanCr;
 		rWidthCr <= wWidthCr;
 		Cr2 <= Cr;
+		Cr3 <= Cr2;
 
-		subOut <= { {10{1'b0}}, Cr2, {14{1'b0}}} - rMeanCr;
+		subOut <= { {10{1'b0}}, Cr3, {14{1'b0}}} - rMeanCr;
 		rWidthCr2 <= rWidthCr;
 
-		addOut <=  multOut + 32'h00268000;
+		addOut <=  {multOut[63], multOut[44 : 14]} + 32'h00268000;
 
 		result <= wSelectOut ? { {10{1'b0}}, crShiftRegOut, {14{1'b0}}} :  addOut;
 

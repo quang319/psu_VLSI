@@ -1,10 +1,11 @@
 module widthCb (
+	input wire clk,
 	input wire [7:0] Y,
 
 	output reg [31:0] result
 	);
 
-	always @(Y) begin
+	always @(posedge clk) begin
 		case (Y)
 			8'd0: result = 32'h00009a4d; 
 			8'd1: result = 32'h00009895; 
