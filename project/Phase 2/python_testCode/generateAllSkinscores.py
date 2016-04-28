@@ -8,7 +8,7 @@ def extractNPrintFromCSV (fileName):
 	return dataList
 
 def genValids (number):
-	dataList = range(0,286)
+	dataList = range(0,number)
 	[print('8\'d%s,' %(1)) for data in dataList]
 	return dataList
 
