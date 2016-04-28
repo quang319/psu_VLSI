@@ -1,5 +1,7 @@
+from __future__ import division
 from generateConstants import generateConstants
 from convForHex import convForHex
+
 
 const = generateConstants(14)
 
@@ -44,10 +46,23 @@ def createFile(nameOfModule, listOfNumbers):
 
 # listMeanCr = [MeanCr(y) for y in range(0,256)]
 # listMeanCb = [MeanCb(y) for y in range(0,256)]
-# listWidthCr = [WidthCr(y) for y in range(0,256)]
-# listWidthCb	= [WidthCb(y) for y in range(0,256)]
+# listWidthCr = [const['W_Cr']/WidthCr(y) for y in range(0,256)]
+# listWidthCb = [const['W_Cb']/WidthCb(y) for y in range(0,256)]
+listWidthCr = []
+listWidthCb = []
+for y in range(0,256):
+  if WidthCr(y) == 0.0:
+    listWidthCr.append(0.0)
+  else:
+    listWidthCr.append(const['W_Cr']/WidthCr(y))
+for y in range(0,256):
+  if WidthCb(y) == 0.0:
+    listWidthCb.append(0.0)
+  else:
+    listWidthCb.append(const['W_Cb']/WidthCb(y))
+
 
 # createFile("meanCr", listMeanCr)
 # createFile("meanCb", listMeanCb)
-# createFile("widthCr", listWidthCr)
-# createFile("widthCb", listWidthCb)
+createFile("widthCr", listWidthCr)
+createFile("widthCb", listWidthCb)
