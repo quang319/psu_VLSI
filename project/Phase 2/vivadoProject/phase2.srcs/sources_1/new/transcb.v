@@ -27,7 +27,8 @@ module transcb(
 
 	output reg [31:0] result
     );
-	wire signed [31:0] wMeanCb, wWidthCb, multOut;
+	wire signed [31:0] wMeanCb, wWidthCb;
+	wire signed [63:0] multOut;
 	reg signed [31:0] rMeanCb, rWidthCb, rWidthCb2;
 	wire rSelectIn;
 	wire wSelectOut;

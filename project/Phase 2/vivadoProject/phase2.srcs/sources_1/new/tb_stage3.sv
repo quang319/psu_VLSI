@@ -21,7 +21,7 @@ module tb_stage3;
 
 	///// Output //////
 	// 68137 	// 0, 155, 110
-	// 17014784	// 0, 0, 10
+	// 17014784	// 0, 0, 10 		// This value is wrong... use a different input
 	// 457336 	// 115, 70, 110 
 
 	stage3 uut_stage3(
