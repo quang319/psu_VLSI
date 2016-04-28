@@ -29,7 +29,7 @@ module stage4(
 	reg signed [31:0] subOut;
 	wire select;
 	wire selectOut;
-	wire signed [31:0] multOut;
+	wire signed [63:0] multOut;
 	
 
 	//
@@ -37,7 +37,7 @@ module stage4(
 	//
 	shiftReg #(
 		.DATA_WIDTH(1),	
-		.NUM_OF_STAGES(6))
+		.NUM_OF_STAGES(7))
 
 		selector(
 			.clk(clk),
@@ -57,7 +57,7 @@ module stage4(
 	always @(posedge clk) begin
 		subOut <= `Radius - in1;
 
-		skinscore <= selectOut ? multOut[21:14] : 8'h0;
+		skinscore <= selectOut ? multOut[35:28] : 8'h0;
 
 	end
 	

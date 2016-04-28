@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log tb_stage2.vds -m64 -mode batch -messageDb vivado.pb -source tb_stage2.tcl
+EAStep vivado -log skintone_TopLevel.vds -m64 -mode batch -messageDb vivado.pb -source skintone_TopLevel.tcl

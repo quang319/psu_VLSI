@@ -2,8 +2,8 @@
 # Vivado v2014.4 (64-bit)
 # SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Mon Apr 11 21:25:52 2016
-# Process ID: 12406
+# Start of session at: Thu Apr 28 06:53:52 2016
+# Process ID: 10176
 # Log file: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/skintone_TopLevel.vds
 # Journal file: /home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -25,15 +25,15 @@ source skintone_TopLevel.tcl
 # set_property file_type "Verilog Header" [get_files {{/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/projectHeader.vh}}]
 # read_verilog -library xil_defaultlib {
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v}
-#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v}
-#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v}
-#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v}
+#   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/mmcm_i125_o100_o200_o400_o600/mmcm_i125_o100_o200_o400_o600_clk_wiz.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v}
 #   {/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v}
@@ -47,9 +47,8 @@ Command: synth_design -top skintone_TopLevel -part xc7vx690tffg1157-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
-INFO: [Common 17-1223] The version limit for your license is '2015.11' and will expire in -133 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 976.395 ; gain = 143.734 ; free physical = 5161 ; free virtual = 22819
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 976.395 ; gain = 143.734 ; free physical = 1538 ; free virtual = 22326
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'skintone_TopLevel' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:22]
 INFO: [Synth 8-638] synthesizing module 'mmcm_i125_o100_o200_o400_o600_clk_wiz' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/constrainsAndClockWiz/mmcm_i125_o100_o200_o400_o600/mmcm_i125_o100_o200_o400_o600_clk_wiz.v:70]
@@ -122,40 +121,38 @@ INFO: [Synth 8-638] synthesizing module 'shiftReg' [/home/grads/qxn5005/Document
 INFO: [Synth 8-256] done synthesizing module 'shiftReg' (5#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
 INFO: [Synth 8-638] synthesizing module 'transcb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v:23]
 INFO: [Synth 8-638] synthesizing module 'meanCb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:1]
-INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:8]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:9]
 INFO: [Synth 8-256] done synthesizing module 'meanCb' (6#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCb.v:1]
 INFO: [Synth 8-638] synthesizing module 'widthCb' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:1]
-INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:8]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:9]
 INFO: [Synth 8-256] done synthesizing module 'widthCb' (7#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCb.v:1]
 INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
 	Parameter DATA_WIDTH bound to: 1 - type: integer 
-	Parameter NUM_OF_STAGES bound to: 8 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 10 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized0' (7#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
 INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized1' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter NUM_OF_STAGES bound to: 7 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized1' (7#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
-INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/.Xil/Vivado-12406-p218inst09.cse.psu.edu/realtime/mult_gen_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (8#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/.Xil/Vivado-12406-p218inst09.cse.psu.edu/realtime/mult_gen_0_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/.Xil/Vivado-10176-p218inst09.cse.psu.edu/realtime/mult_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (8#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.runs/synth_1/.Xil/Vivado-10176-p218inst09.cse.psu.edu/realtime/mult_gen_0_stub.v:7]
 INFO: [Synth 8-256] done synthesizing module 'transcb' (9#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcb.v:23]
 INFO: [Synth 8-638] synthesizing module 'transcr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v:23]
 INFO: [Synth 8-638] synthesizing module 'meanCr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:1]
-INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:8]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:9]
 INFO: [Synth 8-256] done synthesizing module 'meanCr' (10#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/meanCr.v:1]
 INFO: [Synth 8-638] synthesizing module 'widthCr' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:1]
-INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:8]
+INFO: [Synth 8-226] default block is never used [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:9]
 INFO: [Synth 8-256] done synthesizing module 'widthCr' (11#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/widthCr.v:1]
 INFO: [Synth 8-256] done synthesizing module 'transcr' (12#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/transcr.v:23]
 INFO: [Synth 8-638] synthesizing module 'stage2' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v:23]
-	Parameter DATA_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'stage2' (13#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage2.v:23]
 INFO: [Synth 8-638] synthesizing module 'stage3' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v:23]
-	Parameter DATA_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'stage3' (14#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage3.v:23]
 INFO: [Synth 8-638] synthesizing module 'stage4' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v:23]
 INFO: [Synth 8-638] synthesizing module 'shiftReg__parameterized2' [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
 	Parameter DATA_WIDTH bound to: 1 - type: integer 
-	Parameter NUM_OF_STAGES bound to: 6 - type: integer 
+	Parameter NUM_OF_STAGES bound to: 7 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'shiftReg__parameterized2' (14#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:23]
 INFO: [Synth 8-256] done synthesizing module 'stage4' (15#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/stage4.v:23]
 INFO: [Synth 8-256] done synthesizing module 'skintoneDetector' (16#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintoneDetector.v:23]
@@ -165,7 +162,7 @@ WARNING: [Synth 8-3848] Net Y in module/entity skintone_TopLevel does not have d
 WARNING: [Synth 8-3848] Net Cr in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:41]
 INFO: [Synth 8-256] done synthesizing module 'skintone_TopLevel' (17#1) [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:22]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1011.691 ; gain = 179.031 ; free physical = 5123 ; free virtual = 22781
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1011.691 ; gain = 179.031 ; free physical = 1500 ; free virtual = 22288
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -200,7 +197,7 @@ WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[2] to constant 0 [/ho
 WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[1] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
 WARNING: [Synth 8-3295] tying undriven pin uut_skintone:Cr[0] to constant 0 [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:78]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1011.691 ; gain = 179.031 ; free physical = 5123 ; free virtual = 22781
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1011.691 ; gain = 179.031 ; free physical = 1500 ; free virtual = 22288
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -391,29 +388,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1497.207 ; gain = 0.000 ; free physical = 4681 ; free virtual = 22343
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1497.207 ; gain = 0.000 ; free physical = 1060 ; free virtual = 21849
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4680 ; free virtual = 22343
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1060 ; free virtual = 21848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1157-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4680 ; free virtual = 22343
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1060 ; free virtual = 21848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4680 ; free virtual = 22343
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1060 ; free virtual = 21848
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3848] Net valid_in in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:38]
 WARNING: [Synth 8-3848] Net Cb in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:39]
 WARNING: [Synth 8-3848] Net Y in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:40]
 WARNING: [Synth 8-3848] Net Cr in module/entity skintone_TopLevel does not have driver. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/skintone_TopLevel.v:41]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4675 ; free virtual = 22338
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1055 ; free virtual = 21844
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -431,10 +428,13 @@ Detailed RTL Component Info :
 +---Registers : 
 	               56 Bit    Registers := 2     
 	               40 Bit    Registers := 1     
-	               32 Bit    Registers := 20    
+	               32 Bit    Registers := 24    
+	               10 Bit    Registers := 2     
 	                8 Bit    Registers := 7     
-	                6 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 	                1 Bit    Registers := 5     
++---ROMs : 
+	                              ROMs := 2     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 1     
@@ -456,12 +456,18 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 Module meanCb 
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
 Module widthCb 
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
 Module shiftReg__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	                8 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 Module shiftReg__parameterized1 
 Detailed RTL Component Info : 
@@ -475,13 +481,19 @@ Detailed RTL Component Info :
 	   3 Input     32 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 6     
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 Module meanCr 
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
 Module widthCr 
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
 Module transcr 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -489,7 +501,7 @@ Detailed RTL Component Info :
 	   3 Input     32 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 6     
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 Module stage2 
@@ -507,7 +519,7 @@ Detailed RTL Component Info :
 Module shiftReg__parameterized2 
 Detailed RTL Component Info : 
 +---Registers : 
-	                6 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 Module stage4 
 Detailed RTL Component Info : 
@@ -534,19 +546,19 @@ BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4675 ; free virtual = 22338
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1055 ; free virtual = 21844
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCr/selector/temp_reg' and it is trimmed from '8' to '7' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
-WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCb/selector/temp_reg' and it is trimmed from '8' to '7' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
-WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/Stage4/selector/temp_reg' and it is trimmed from '6' to '5' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCr/selector/temp_reg' and it is trimmed from '10' to '9' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCb/selector/temp_reg' and it is trimmed from '10' to '9' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
+WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/Stage4/selector/temp_reg' and it is trimmed from '7' to '6' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
 WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCb/cbShiftReg/temp_reg' and it is trimmed from '56' to '48' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
 WARNING: [Synth 8-3936] Found unconnected internal register 'uut_skintone/TransCr/crShiftReg/temp_reg' and it is trimmed from '56' to '48' bits. [/home/grads/qxn5005/Documents/psu_VLSI/project/Phase 2/vivadoProject/phase2.srcs/sources_1/new/shiftReg.v:35]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4675 ; free virtual = 22338
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1055 ; free virtual = 21843
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4675 ; free virtual = 22338
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1055 ; free virtual = 21843
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -559,6 +571,7 @@ Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Finished RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[5] ) is unused and will be removed from module skintone_TopLevel.
 WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[4] ) is unused and will be removed from module skintone_TopLevel.
 WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[3] ) is unused and will be removed from module skintone_TopLevel.
 WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/temp_reg[2] ) is unused and will be removed from module skintone_TopLevel.
@@ -569,19 +582,19 @@ WARNING: [Synth 8-3332] Sequential element (\uut_skintone/Stage4/selector/result
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1054 ; free virtual = 21842
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1054 ; free virtual = 21842
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1054 ; free virtual = 21842
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1054 ; free virtual = 21842
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -589,10 +602,34 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 1050 ; free virtual = 21843
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\uut_skintone/TransCr/meanCrLUT/result_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[31] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[30] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[29] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[28] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[27] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[26] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[25] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[24] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[23] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/meanCrLUT/result_reg[22] ) is unused and will be removed from module skintone_TopLevel.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\uut_skintone/TransCb/meanCbLUT/result_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[31] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[30] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[29] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[28] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[27] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[26] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[25] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[24] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[23] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[22] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[21] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/meanCbLUT/result_reg[19] ) is unused and will be removed from module skintone_TopLevel.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4674 ; free virtual = 22336
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1505.203 ; gain = 672.543 ; free physical = 1033 ; free virtual = 21826
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -603,103 +640,80 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[20] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[19] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[18] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[17] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[7] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[6] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[5] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[4] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[3] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[2] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[1] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/Cb2_reg[0] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[31] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[30] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[29] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[28] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[27] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[26] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[25] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[24] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[23] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[22] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[21] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[20] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[19] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[18] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[17] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[16] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[15] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[14] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[13] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[12] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[11] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[10] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[9] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[8] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[7] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[6] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[5] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[4] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[3] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[2] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[1] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb_reg[0] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[31] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[30] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[29] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[28] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[27] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[26] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[25] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[24] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[23] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[22] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[21] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[20] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[19] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[17] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[16] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[13] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[8] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[5] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[3] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[2] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[1] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rWidthCb2_reg[0] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rMeanCr_reg[21] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rMeanCr_reg[20] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[7] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[6] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[5] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[4] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[3] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[2] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[1] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/Cr2_reg[0] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[31] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[30] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[29] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[28] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[27] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[26] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[25] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[24] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[23] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[22] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[21] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[20] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[19] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[18] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[17] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[16] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[15] ) is unused and will be removed from module skintone_TopLevel.
-WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/rWidthCr_reg[14] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[31] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[30] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[29] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[28] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[27] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[26] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[25] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[24] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[23] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[22] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[21] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[20] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[19] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[18] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[17] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[16] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[15] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[14] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[13] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[12] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[11] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[10] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[9] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[8] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[7] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[6] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[5] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[4] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[3] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[2] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[1] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/widthCbLUT/result_reg[0] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[31] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[30] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[29] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[28] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[27] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[26] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[25] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[24] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[23] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[22] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[21] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[20] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[19] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[18] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[17] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[16] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[15] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[14] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[13] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[12] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[11] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[10] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[9] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[8] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[7] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[6] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[5] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[4] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[3] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[2] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[1] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCr/widthCrLUT/result_reg[0] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[31] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[30] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[29] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[28] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[27] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[26] ) is unused and will be removed from module skintone_TopLevel.
+WARNING: [Synth 8-3332] Sequential element (\uut_skintone/TransCb/rMeanCb_reg[25] ) is unused and will be removed from module skintone_TopLevel.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1505.203 ; gain = 672.543 ; free physical = 1033 ; free virtual = 21826
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -723,7 +737,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1505.203 ; gain = 672.543 ; free physical = 1033 ; free virtual = 21826
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -736,7 +750,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1505.203 ; gain = 672.543 ; free physical = 1033 ; free virtual = 21826
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -748,7 +762,7 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1505.203 ; gain = 672.543 ; free physical = 1033 ; free virtual = 21826
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -784,10 +798,10 @@ Report Cell Usage:
 |11    |mult_gen_0__9  |     1|
 |12    |BUFG           |     5|
 |13    |CARRY4         |    90|
-|14    |LUT1           |   252|
+|14    |LUT1           |   243|
 |15    |LUT2           |    96|
 |16    |MMCME2_ADV     |     1|
-|17    |FDRE           |   504|
+|17    |FDRE           |   569|
 |18    |IBUF           |     1|
 |19    |IBUFDS         |     1|
 +------+---------------+------+
@@ -796,21 +810,23 @@ Report Instance Areas:
 +------+----------------+--------------------------------------+------+
 |      |Instance        |Module                                |Cells |
 +------+----------------+--------------------------------------+------+
-|1     |top             |                                      |  4822|
+|1     |top             |                                      |  8750|
 |2     |  i_clock_synth |mmcm_i125_o100_o200_o400_o600_clk_wiz |     8|
-|3     |  uut_skintone  |skintoneDetector                      |  4813|
-|4     |    Stage2      |stage2                                |  1705|
-|5     |    Stage4      |stage4                                |   424|
-|6     |    TransCb     |transcb                               |   555|
-|7     |    TransCr     |transcr                               |   535|
-|8     |    stage3      |stage3                                |  1594|
+|3     |  uut_skintone  |skintoneDetector                      |  8741|
+|4     |    Stage2      |stage2                                |  3104|
+|5     |    Stage4      |stage4                                |   776|
+|6     |    TransCb     |transcb                               |   941|
+|7     |      meanCbLUT |meanCb                                |    20|
+|8     |    TransCr     |transcr                               |   950|
+|9     |      meanCrLUT |meanCr                                |    22|
+|10    |    stage3      |stage3                                |  2970|
 +------+----------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1505.203 ; gain = 672.543 ; free physical = 1033 ; free virtual = 21826
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 274 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1497.207 ; gain = 76.266 ; free physical = 4665 ; free virtual = 22328
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1497.207 ; gain = 664.547 ; free physical = 4665 ; free virtual = 22328
+Synthesis finished with 0 errors, 0 critical warnings and 379 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1505.203 ; gain = 84.262 ; free physical = 1032 ; free virtual = 21824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1505.203 ; gain = 672.543 ; free physical = 1032 ; free virtual = 21824
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -822,10 +838,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-63 Infos, 301 Warnings, 2 Critical Warnings and 0 Errors encountered.
+64 Infos, 301 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1503.180 ; gain = 571.754 ; free physical = 4657 ; free virtual = 22320
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1506.203 ; gain = 574.777 ; free physical = 1031 ; free virtual = 21824
 # write_checkpoint -noxdef skintone_TopLevel.dcp
 # catch { report_utilization -file skintone_TopLevel_utilization_synth.rpt -pb skintone_TopLevel_utilization_synth.pb }
-report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1503.211 ; gain = 0.000 ; free physical = 4656 ; free virtual = 22319
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 21:26:37 2016...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1506.234 ; gain = 0.000 ; free physical = 1030 ; free virtual = 21823
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 28 06:54:37 2016...
