@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim tc_fullyPipelined_behav -key {Behavioral:sim_1:Functional:tc_fullyPipelined} -tclbatch tc_fullyPipelined.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim tc_changingValid_behav -key {Behavioral:sim_1:Functional:tc_changingValid} -tclbatch tc_changingValid.tcl -log simulate.log

@@ -60,10 +60,7 @@ module tc_smallestValues;
 		8'd250, 		// Smallest xx
 		8'd250, 		// Smallest yy
 		8'd110,		// Smallest pre_skintone	
-		8'd0 	// Smallest skintone
-		 	
-				
-				 
+		8'd0 	// Smallest skintone		 
 	};
 	reg signed valid [6] = '{
 		1'd1, 		
