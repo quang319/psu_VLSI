@@ -11,19 +11,19 @@ module tb_skintoneDetector;
 	int i, file;
 	int j = 0;
 
-	reg signed [7:0] inputY [3] = '{
+	reg [7:0] inputY [3] = '{
 		8'd0, // 0, 155, 110
 		8'd85,		// 85, 155, 110
 		8'd185 // 185, 155, 110 
 
 	};
-	reg signed [7:0] inputCr [3] = '{
+	reg [7:0] inputCr [3] = '{
 		8'd155, // 0, 155, 110
 		8'd155,		// 85, 155, 110
 		8'd155 // 185, 155, 110 
 
 	};
-	reg signed [7:0] inputCb [3] = '{
+	reg [7:0] inputCb [3] = '{
 		8'd110, // 0, 155, 110
 		8'd110,		// 85, 155, 110
 		8'd110 // 185, 155, 110 
