@@ -32,11 +32,11 @@ module tb_stage2;
 	int j = 0;
 
 	reg signed [31:0] inputTransCr [5] = '{
-		32'd2469953, 32'd2480242, 
+		32'd2137685, 32'd2480242, 
 		32'd2479292, 32'd2461548,
 		32'd2475819	};
 	reg signed [31:0] inputTransCb [5] = '{
-		32'd1749319, 32'd1749876,
+		32'd1413954, 32'd1749876,
 		32'd1747517, 32'd1741160,
 		32'd1769472	};
 
@@ -58,14 +58,14 @@ module tb_stage2;
 		file = $fopen("stage2_output.csv", "w+");
 		for (i = 0; i < 300; i = i + 1, j = j + 1 ) begin
 			@(posedge clk);
-			if (j < 5) begin
-				rTransCb <= inputTransCr[j];
-				rTransCr <= inputTransCb[j];
+			if (j < 1) begin
+				rTransCb <= inputTransCb[j];
+				rTransCr <= inputTransCr[j];
 			end
-			else begin
-				rTransCb <= 0;
-				rTransCr <= 0;
-			end
+			// else begin
+			// 	rTransCb <= 0;
+			// 	rTransCr <= 0;
+			// end
 			$fdisplay(file, "%d, %d, %d",i, wLeftOutput, wRightOutput);
 		end
 		$fclose(file);
