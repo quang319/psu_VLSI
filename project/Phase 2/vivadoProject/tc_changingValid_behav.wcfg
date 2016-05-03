@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tc_changingValid_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tc_changingValid" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="27" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/tc_changingValid/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tc_changingValid/valid_in">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/Cb">
+      <obj_property name="ElementShortName">Cb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cb[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/Y">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/Cr">
+      <obj_property name="ElementShortName">Cr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cr[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tc_changingValid/valid_out">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/skinScore">
+      <obj_property name="ElementShortName">skinScore[7:0]</obj_property>
+      <obj_property name="ObjectShortName">skinScore[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/file">
+      <obj_property name="ElementShortName">file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">file[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/j">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/inputY">
+      <obj_property name="ElementShortName">inputY[0:8][7:0]</obj_property>
+      <obj_property name="ObjectShortName">inputY[0:8][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/inputCr">
+      <obj_property name="ElementShortName">inputCr[0:8][7:0]</obj_property>
+      <obj_property name="ObjectShortName">inputCr[0:8][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/inputCb">
+      <obj_property name="ElementShortName">inputCb[0:8][7:0]</obj_property>
+      <obj_property name="ObjectShortName">inputCb[0:8][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/valid">
+      <obj_property name="ElementShortName">valid[0:8]</obj_property>
+      <obj_property name="ObjectShortName">valid[0:8]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tc_changingValid/uut_ST/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tc_changingValid/uut_ST/valid_in">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/Cb">
+      <obj_property name="ElementShortName">Cb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cb[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/Y">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/Cr">
+      <obj_property name="ElementShortName">Cr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cr[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tc_changingValid/uut_ST/valid_out">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/skinScore">
+      <obj_property name="ElementShortName">skinScore[7:0]</obj_property>
+      <obj_property name="ObjectShortName">skinScore[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tc_changingValid/uut_ST/wValid_out">
+      <obj_property name="ElementShortName">wValid_out</obj_property>
+      <obj_property name="ObjectShortName">wValid_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/cr_stage2">
+      <obj_property name="ElementShortName">cr_stage2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cr_stage2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/cb_stage2">
+      <obj_property name="ElementShortName">cb_stage2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cb_stage2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/st2_st3_1">
+      <obj_property name="ElementShortName">st2_st3_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st2_st3_1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/st2_st3_2">
+      <obj_property name="ElementShortName">st2_st3_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st2_st3_2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tc_changingValid/uut_ST/st3_st4">
+      <obj_property name="ElementShortName">st3_st4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st3_st4[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

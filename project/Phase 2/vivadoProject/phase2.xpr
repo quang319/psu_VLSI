@@ -243,12 +243,27 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/tb_transCr_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/tc_changingValid_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="tb_transCb"/>
+        <Option Name="TopModule" Val="tc_allSkinscoreValues"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/tb_transCb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/tb_transCr_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/tb_transCr_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/tb_transCr_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/tc_changingValid_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/tc_changingValid_behav.wcfg"/>
         <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>
     </FileSet>

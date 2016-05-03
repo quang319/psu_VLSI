@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_transCr_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_transCr" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_transCr/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/Y">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/Cr">
+      <obj_property name="ElementShortName">Cr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cr[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/result">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/file">
+      <obj_property name="ElementShortName">file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">file[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/j">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/inputY">
+      <obj_property name="ElementShortName">inputY[0:8][7:0]</obj_property>
+      <obj_property name="ObjectShortName">inputY[0:8][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/inputCr">
+      <obj_property name="ElementShortName">inputCr[0:8][7:0]</obj_property>
+      <obj_property name="ObjectShortName">inputCr[0:8][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_transCr/uut_transcr/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/Y">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/Cr">
+      <obj_property name="ElementShortName">Cr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cr[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/result">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/wMeanCr">
+      <obj_property name="ElementShortName">wMeanCr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wMeanCr[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/wWidthCr">
+      <obj_property name="ElementShortName">wWidthCr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wWidthCr[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/multOut">
+      <obj_property name="ElementShortName">multOut[63:0]</obj_property>
+      <obj_property name="ObjectShortName">multOut[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/rMeanCr">
+      <obj_property name="ElementShortName">rMeanCr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rMeanCr[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/rWidthCr">
+      <obj_property name="ElementShortName">rWidthCr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rWidthCr[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/rWidthCr2">
+      <obj_property name="ElementShortName">rWidthCr2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rWidthCr2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_transCr/uut_transcr/rSelectIn">
+      <obj_property name="ElementShortName">rSelectIn</obj_property>
+      <obj_property name="ObjectShortName">rSelectIn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_transCr/uut_transcr/wSelectOut">
+      <obj_property name="ElementShortName">wSelectOut</obj_property>
+      <obj_property name="ObjectShortName">wSelectOut</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/Cr2">
+      <obj_property name="ElementShortName">Cr2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cr2[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/Cr3">
+      <obj_property name="ElementShortName">Cr3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cr3[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/crShiftRegOut">
+      <obj_property name="ElementShortName">crShiftRegOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">crShiftRegOut[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/subOut">
+      <obj_property name="ElementShortName">subOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">subOut[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_transCr/uut_transcr/addOut">
+      <obj_property name="ElementShortName">addOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addOut[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

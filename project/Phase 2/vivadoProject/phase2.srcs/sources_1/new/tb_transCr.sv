@@ -58,7 +58,7 @@ module tb_transCr;
 		file = $fopen("TransCr_output.csv", "w+");
 		for (i = 0; i < 20; i = i + 1, j = j + 1 ) begin
 			@(posedge clk);
-			if (j < 3) begin
+			if (j < 9) begin
 				Y <= inputY[j];
 				Cr <= inputCr[j];
 			end

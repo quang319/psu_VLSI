@@ -67,11 +67,11 @@ module transcr(
 	
 	shiftReg #(
 		.DATA_WIDTH(8),	
-		.NUM_OF_STAGES(7))
+		.NUM_OF_STAGES(8))
 
 		crShiftReg (
 			.clk(clk),
-			.newInput(Cr2),
+			.newInput(Cr3),
 			.result(crShiftRegOut)
 			);
 
